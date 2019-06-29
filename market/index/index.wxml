@@ -1,0 +1,74 @@
+<!--market/index/index.wxml-->
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<view class='container'>
+  <!-- 切换 -->
+  <view class='search-nav'>
+    <view class='sea-li sea-current'>最新</view>
+    <view class='sea-li'>求购</view>
+    <view class='sea-li'>供应</view>
+  </view>
+  <view class="market-list">
+    <view class="market-li">
+      <navigator url='/market/detail/detail'>
+        <view class="li-top">
+          <view class="li-logo">
+            <image src="../../images/common/p18.jpg"></image>
+          </view>
+          <view class="li-right">
+            <view class="m-name">深圳盛嘉伦 TPE TPR Mr.Hu
+              <i class='supply'>供应</i>
+            </view>
+            <text class="m-time">2018/12/11 10:57:02</text>
+          </view>
+
+        </view>
+        <view class="li-butt">供应TPE TPR厂家直销，深圳品质值得信赖PR厂家直销PR厂家直销！</view>
+      </navigator>
+    </view>
+    <view class="market-li">
+      <navigator url='/market/detail/detail'>
+        <view class="li-top">
+          <view class="li-logo">
+            <image src="../../images/common/p18.jpg"></image>
+          </view>
+          <view class="li-right">
+            <view class="m-name">深圳盛嘉伦 TPE TPR Mr.Hu
+              <i class='buying'>求购</i>
+            </view>
+            <text class="m-time">2018/12/11 10:57:02</text>
+          </view>
+
+        </view>
+        <view class="li-butt">供应TPE TPR厂家直销，深圳品质值得信赖PR厂家直销PR厂家直销！</view>
+      </navigator>
+    </view>
+    <view class="market-li">
+      <navigator url='/market/detail/detail'>
+        <view class="li-top">
+          <view class="li-logo">
+            <image src="../../images/common/p18.jpg"></image>
+          </view>
+          <view class="li-right">
+            <view class="m-name">深圳盛嘉伦 TPE TPR Mr.Hu
+              <i class='supply'>供应</i>
+            </view>
+            <text class="m-time">2018/12/11 10:57:02</text>
+          </view>
+
+        </view>
+        <view class="li-butt">供应TPE TPR厂家直销，深圳品质值得信赖PR厂家直销PR厂家直销！</view>
+      </navigator>
+    </view>
+  </view>
+  <template is="footer" />
+</view>
+
+
+<!-- 加号按钮 -->
+<navigator url="/market/publish/publish">
+<view class="btnadd">
+<i class="icnadd"></i>
+</view>
+</navigator>

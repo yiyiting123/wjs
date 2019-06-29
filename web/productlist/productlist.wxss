@@ -1,0 +1,19 @@
+/* web/productlist/productlist.wxss */
+.container{padding:0 30rpx;width:690rpx;}
+
+.vnav{width:690rpx;height: 100rpx;font-size: 26rpx;line-height: 100rpx;color: #999;text-align: right;}
+.vnav .font34{font-size: 34rpx;color: #000;font-weight: bold;float:left;}
+.vnav .btn{margin-left: 20rpx;}
+.vnav .btnselect{color: #000;}
+
+
+.prolist{width:100%;display: flex;flex-wrap:wrap;justify-content:space-between;}
+.prolist .pro{width:335rpx;background: #fff;border-radius: 10rpx;border:1px solid #e6e6e6;overflow: hidden;margin-bottom: 20rpx;position: relative;height: 360rpx;box-sizing: border-box;}
+.prolist .pro .proimg{width:100%;height: 260rpx;position: relative;}
+.prolist .pro .proimg .play{width:68rpx;height: 68rpx;position: absolute;bottom: 20rpx;left: 20rpx;}
+.prolist .pro image{width:100%;height: 100%;float: left;}
+.prolist .pro .pro-con{width:100%;height: auto;box-sizing: border-box;padding: 10rpx 25rpx;float: left;}
+.prolist .pro .pro-con .font2835{width:100%;height: 45rpx;line-height: 45rpx; font-size: 28rpx;color: #000;overflow: hidden;text-overflow: ellipsis;display:inline-block;float: left;}
+.prolist .pro .pro-con .font2635{width:100%;height: 35rpx;line-height: 35rpx; font-size: 26rpx;color: #999;overflow: hidden;text-overflow: ellipsis;display:inline-block;float: left;}
+
+.prolist .pro .addicon{width:28rpx;height: 28rpx;background: #ff2832;border-radius: 28rpx;position: absolute;bottom: 15rpx;right: 20rpx;display: flex;justify-content: center;align-items: center;font-size: 28rpx;color: #fff;font-weight: 600;line-height: 28rpx;background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAABsUlEQVRIib3WPWtTURjA8V9OoVM7ODmL1cY1koBv1Umwori5KAp+CfsJ7McoOAkOQtXgWCsWopkVTXDVyaFZLNg4nHMlvW2Te425fzjDPec+z/++nJenNqw3TKCGK7iJS1jCiTT2Ez28x0tsYzg22RhhwEOsJUkReniCDeyXEZ7CMzQLivJ8wF18yw+EA1efunANnSlkUmwHK/mB/Btexybmp5CNsofbeJN1jL7hMp4XknW2YpvMfMq5nBfO4SkWi2SxuBBbMRZS7rlR4QPT/bNJNMUZL4jrbG2GsozHqAVxJhVdZ9OwhJWA1QpkGasBFysUXgg4U6HwbG1Yb/ySX3udrTLT/mh2B7Su5nv3wlH3zpLasN74jpOlouKey7nzZX0/Ar6WjZqCLwE7FQp3Al5VKHwd8FY8qWdND9tBrEHWKxCuYz9bFhv4OENZNzn+Hk+/cR+DQuG7g9iKMcC95DhUYtzAC/+3xLiDdtaR32na6YbCjz+GQV52lDCTNsXv/q90U452fuC4vfQzWniEfglRP8W0Uo5DjKu8Rx/qMm6JZ+dpB0v9vljqb+KdYyrujD+FHV7J16950wAAAABJRU5ErkJggg==);background-size: contain;background-repeat: no-repeat;}

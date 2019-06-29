@@ -1,0 +1,102 @@
+<!--web/category/category.wxml-->
+<import src="../common/template.wxml" />
+<!-- 状态栏 -->
+<template is="statusBar" data="{{statusBarHeight,statusBarTitle}}"/>
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<!-- 进货单 -->
+<template is="btnCart" data="{{cartNum}}" />
+
+<view class='container' style='margin-top:{{statusBarHeight+44}}px'>
+  <view class="classify">
+
+    <!--分类导航栏-->
+    <scroll-view class='left-navbar' scroll-y="true">
+      <view class='active'>其他分类</view>
+      <view>其他分类</view>
+      <view>其他分类</view>
+      <view>其他分类</view>
+      <view>其他分类</view>
+      <view>其他分类</view>
+      <view>其他分类</view>
+      <view>其他分类</view>
+      <view>其他分类</view>
+      <view>其他分类</view>
+      <view>其他分类</view>
+      <view>其他分类</view>
+      <view>其他分类</view>
+      <view>其他分类</view>
+      <view>其他分类12</view>
+
+    </scroll-view>
+
+    <scroll-view id="right" scroll-y="true" scroll-top="{{scrollTop}}">
+      <view class='cateli'>
+        <navigator url='/web/productlist/productlist'>全部</navigator>
+      </view>
+      <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+       <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+       <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+       <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+       <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+      <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+       <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+       <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+       <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+       <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+      <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+       <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+       <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+       <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+       <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+      <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+       <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+       <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+       <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+       <view class='cateli'>
+        <navigator>童车系列1</navigator>
+      </view>
+        <template is="footer" />
+    </scroll-view>
+
+  </view>
+
+</view>

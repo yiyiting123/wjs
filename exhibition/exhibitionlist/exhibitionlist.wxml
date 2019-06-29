@@ -1,0 +1,58 @@
+<!--exhibition/exhibitionlist/exhibitionlist.wxml-->
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+
+<view class='container'>
+  <!-- 切换 -->
+  <view class='search-nav'>
+    <scroll-view scroll-x="true" style="width: 690rpx;white-space:nowrap;float:left;-webkit-overflow-scrolling: touch;">
+      <!-- vtab -->
+      <view class="vtab">
+        <view class="vtab-nav">
+          <view wx:for="{{tabnav.tabitem}}" wx:key='id' bindtap="setTab" data-tabindex="{{index}}" class="vtab-item {{showtab==index?'tabcurrent':''}}">{{item.text}}</view>
+          <view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 展会 显示5个-->
+  <view class='new-col'>
+
+    <view class='col-con'>
+      <navigator class='n-item' url=''>
+        <view class='nimg'>
+          <image src='../../images/common/p15.jpg'></image>
+        </view>
+        <view class='nright'>
+          <view class='font30'>2019中国（杭州）国际孕婴童用品产业博览会</view>
+          <view class='icnIntoysol'>
+            <image src='../../images/exhibition/icn-01.png'></image>
+            <label class='txt'>玩具说战略合作第4年</label>
+          </view>
+          <view class='font22'>时间：2019年11月16-18日</view>
+          <view class='font22'>地点：杭州国际博览中心（G20峰会主场）</view>
+        </view>
+      </navigator>
+      <navigator class='n-item' url=''>
+        <view class='nimg'>
+          <image src='../../images/common/p15.jpg'></image>
+        </view>
+        <view class='nright'>
+          <view class='font30'>2019中国（杭州）国际孕婴童用品产业博览会</view>
+          <view class='icnIntoysol'>
+            <image src='../../images/exhibition/icn-01.png'></image>
+            <label class='txt'>玩具说战略合作第4年</label>
+          </view>
+          <view class='font22'>时间：2019年11月16-18日</view>
+          <view class='font22'>地点：杭州国际博览中心（G20峰会主场）</view>
+        </view>
+      </navigator>
+
+
+    </view>
+  </view>
+
+  <template is="footer" />
+</view>

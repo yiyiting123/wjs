@@ -1,0 +1,174 @@
+<!--exhibition/index/index.wxml-->
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+
+<view class='container'>
+  <!-- 近期展会推荐  显示4个-->
+  <view class='new-col zhanhui-col'>
+    <view class='title'>近期展会推荐
+      <view class='more'>
+        <span class="font28">{{current}} </span>
+        <span class="font22"> / {{swipercount}}</span>
+      </view>
+    </view>
+    <view class='zhanhui-slider'>
+      <!-- 轮播图 -->
+      <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="5000" duration="500" class='zhanhui-swiper' bindchange='swiperChange'>
+        <!-- <block wx:for="{{bannerlist}}" wx:key="Name" data-data="{{item}}"> -->
+        <swiper-item>
+          <view class='zhanhui-item'>
+            <image src="../../images/common/p14.jpg" class="v-img" />
+            <image class='vicn' src='../../images/common/icn-02.png'></image>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class='zhanhui-item'>
+            <image src="../../images/common/p14.jpg" class="v-img" />
+            <image class='vicn' src='../../images/common/icn-02.png'></image>
+          </view>
+        </swiper-item>
+        <!-- </block> -->
+      </swiper>
+    </view>
+  </view>
+  <!-- 展会 显示5个-->
+  <view class='new-col'>
+
+    <view class='col-con'>
+      <navigator class='n-item' url=''>
+        <view class='nimg'>
+          <image src='../../images/common/p15.jpg'></image>
+        </view>
+        <view class='nright'>
+          <view class='font30'>2019中国（杭州）国际孕婴童用品产...</view>
+          <view class='font26'>时间：2019年11月16-18日</view>
+          <view class='font26'>地点：杭州国际博览中心（G20峰会主场）</view>
+        </view>
+      </navigator>
+      <navigator class='n-item' url=''>
+        <view class='nimg'>
+          <image src='../../images/common/p15.jpg'></image>
+        </view>
+        <view class='nright'>
+          <view class='font30'>2019中国（杭州）国际孕婴童用品产...</view>
+          <view class='font26'>时间：2019年11月16-18日</view>
+          <view class='font26'>地点：杭州国际博览中心（G20峰会主场）</view>
+        </view>
+      </navigator>
+      <navigator class='n-item' url=''>
+        <view class='nimg'>
+          <image src='../../images/common/p15.jpg'></image>
+        </view>
+        <view class='nright'>
+          <view class='font30'>2019中国（杭州）国际孕婴童用品产...</view>
+          <view class='font26'>时间：2019年11月16-18日</view>
+          <view class='font26'>地点：杭州国际博览中心（G20峰会主场）</view>
+        </view>
+      </navigator>
+      <navigator class='n-item' url=''>
+        <view class='nimg'>
+          <image src='../../images/common/p15.jpg'></image>
+        </view>
+        <view class='nright'>
+          <view class='font30'>2019中国（杭州）国际孕婴童用品产...</view>
+          <view class='font26'>时间：2019年11月16-18日</view>
+          <view class='font26'>地点：杭州国际博览中心（G20峰会主场）</view>
+        </view>
+      </navigator>
+      <navigator class='n-item' url=''>
+        <view class='nimg'>
+          <image src='../../images/common/p15.jpg'></image>
+        </view>
+        <view class='nright'>
+          <view class='font30'>2019中国（杭州）国际孕婴童用品产...</view>
+          <view class='font26'>时间：2019年11月16-18日</view>
+          <view class='font26'>地点：杭州国际博览中心（G20峰会主场）</view>
+        </view>
+      </navigator>
+      <view class='btnmore'>
+        <navigator url='' class='more' url="/exhibition/exhibitionlist/exhibitionlist">更多展览会</navigator>
+      </view>
+    </view>
+  </view>
+
+  <!-- 广告横条 -->
+  <view class='adcol'>
+    <view class='adcol-con'>
+      <navigator class='adnav'>
+        <image class='adimg' src='../../images/common/p16.jpg'></image>
+        <image class='i' src='../../images/common/icn-02.png'></image>
+      </navigator>
+      <navigator class='adnav'>
+        <image class='adimg' src='../../images/common/p16.jpg'></image>
+        <image class='i' src='../../images/common/icn-02.png'></image>
+      </navigator>
+    </view>
+  </view>
+
+  <!-- 展会新闻 -->
+  <view class='new-col'>
+    <view class='title'>展会新闻
+      <navigator class='more' url="/exhibition/exhibitionnewslist/exhibitionnewslist">更多</navigator>
+    </view>
+    <view class='nli'>
+      <navigator url='/news/detail/detail'>
+        <view class='nli-left'>
+          <image src='../../images/common/p17.jpg'></image>
+
+        </view>
+        <view class='nli-right'>
+          <view class='nli-name'>迪士尼砸钱拉开战事，跨界PK奈飞苹果亚马逊</view>
+          <view class='nli-hot'>
+            <text space='nbsp'>时间:2019-04-16   热度:2541</text>
+            <view>来源:成都游博会</view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+    <view class='nli'>
+      <navigator url='/news/detail/detail'>
+        <view class='nli-left'>
+          <image src='../../images/common/p17.jpg'></image>
+
+        </view>
+        <view class='nli-right'>
+          <view class='nli-name'>迪士尼砸钱拉开战事，跨界PK奈飞苹果亚马逊</view>
+          <view class='nli-hot'>
+            <text space='nbsp'>时间:2019-04-16   热度:2541</text>
+            <view>来源:成都游博会</view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+    <view class='nli'>
+      <navigator url='/news/detail/detail'>
+        <view class='nli-left'>
+          <image src='../../images/common/p17.jpg'></image>
+
+        </view>
+        <view class='nli-right'>
+          <view class='nli-name'>迪士尼砸钱拉开战事，跨界PK奈飞苹果亚马逊</view>
+          <view class='nli-hot'>
+            <text space='nbsp'>时间:2019-04-16   热度:2541</text>
+            <view>来源:成都游博会</view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+    <!-- 按地区找展会 -->
+  <view class='new-col areacol'>
+    <view class='title'>按地区找展会
+      <navigator class='more' url='/exhibition/category/category'>更多</navigator>
+    </view>
+    <view class='col-con'>
+      <navigator class='s-item'  url='/exhibition/exhibitionlist/exhibitionlist'>国内(1568)</navigator>
+      <navigator class='s-item'  url='/exhibition/exhibitionlist/exhibitionlist'>港澳台(45)</navigator>
+      <navigator class='s-item nomar'  url='/exhibition/exhibitionlist/exhibitionlist'>国际(45)</navigator>
+    </view>
+  </view>
+  
+  <template is="footer" />
+</view>

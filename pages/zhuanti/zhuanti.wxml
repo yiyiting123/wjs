@@ -1,0 +1,33 @@
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+
+<view class='container'>
+  <view class='vnav'>
+    <text class="btn {{current==0?'btnselect':''}} ">按热度</text>
+    <text class="btn {{current==1?'btnselect':''}} ">按时间</text>
+  </view>
+  <view class='newslist'>
+    <navigator class='list-li' url="/pages/zhuantidetail/zhuantidetail">
+      <view class='img'>
+        <image src='../../images/common/p1.jpg' mode='widthFix'></image>
+        <view class='new-mask'></view>
+      </view>
+      <view class='txt-con'>
+        <view class='font30b'>2019水货玩具大集合，开年进货必备。</view>
+        <view class='font26'>每年夏天玩具是一个非常热门的类别，采购商们不能...</view>
+      </view>
+    </navigator>
+    <navigator class='list-li' url="/pages/zhuantidetail/zhuantidetail">
+      <view class='img'>
+        <image src='../../images/common/p1.jpg' mode='widthFix'></image>
+        <view class='new-mask'></view>
+      </view>
+      <view class='txt-con'>
+        <view class='font30b'>2019水货玩具大集合，开年进货必备。</view>
+        <view class='font26'>每年夏天玩具是一个非常热门的类别，采购商们不能...</view>
+      </view>
+    </navigator>
+  </view>
+  <template is="footer" />
+</view>

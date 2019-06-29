@@ -1,0 +1,126 @@
+<!--video/detail/detail.wxml-->
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<view class='container'>
+  <!-- 视频播放区 -->
+  <view class='videocon' bindtap='videoPlay' style="display: {{ isPlay ? 'none' : 'block' }};">
+    <image class='vimg' src='../../images/common/p8.jpg'></image>
+    <view class='vmask'>
+      <image src='../../images/video/video.png'></image>
+    </view>
+  </view>
+  <view class='video-play' wx:if="{{isPlay}}">
+    <!-- 视频 -->
+    <video src="http://1253151570.vod2.myqcloud.com/2717553dvodgzp1253151570/7fbd6bb25285890789703485005/083CmhTZe7UA.mp4" id="{{index}}" class='video' autoplay="{{true}}">
+    </video>
+  </view>
+  <!-- 视频名称信息 -->
+  <view class='vcol'>
+    <view class='vleft'>
+      <view class='vname'>益智工具积木，能拼成各种类型，环保安全无毒，是小孩子最佳的玩具。</view>
+      <view class='font30'>
+        <text class='color99' space='nbsp'>时间 2019-06-01  热度 2563次播放</text>
+      </view>
+    </view>
+    <view class='vright'>
+      <view class='btnShare' bindtap='showModal'>
+        <image src='../../images/video/icn-03.png'></image>
+        <span class='txtShare' >分享</span>
+      </view>
+    </view>
+  </view>
+
+  <!-- 视频厂家信息 -->
+  <view class='vcol'>
+    <view class='vleft'>
+      <!-- logo -->
+      <view class='vcomlogo'>
+        <image src='../../images/common/p7.jpg'></image>
+      </view>
+      <!-- 名称 -->
+      <view class='vcomcon'>
+        <view class='vcomname'>汕头市澄海区陆之宝玩具有限公司</view>
+        <view class='icnIntoysol'>
+          <image src='../../images/video/icn-05.png'></image>
+          <label class='txt'>玩具说第4年</label>
+        </view>
+      </view>
+    </view>
+    <!-- 官网 -->
+    <view class='vright'>
+      <view class='btnInWeb'>
+        <navigator class='btncon' open-type='redirectTo' url='/web/index/index'>
+          <image src='../../images/video/icn-04.png'></image>
+          <label class='txt'>官网</label>
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+  <!-- 相关视频列表 -->
+  <view class='videolist'>
+    <view class='title'>相关视频</view>
+
+    <view class='vli'>
+      <navigator open-type='redirectTo' url='/video/detail/detail'>
+        <view class='vli-left'>
+          <image src='../../images/common/p8.jpg'></image>
+          <view class='vli-mask'>
+            <image src='../../images/video/video.png'></image>
+          </view>
+        </view>
+        <view class='vli-right'>
+          <view class='vli-name'>益智工具积木，能拼成各种类型，环保安全无毒，是小孩子...</view>
+          <view class='vli-hot'>
+            <text space='nbsp'>陆之宝玩具  热度 2541</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+
+    <view class='vli'>
+      <navigator  open-type='redirectTo' url='/video/detail/detail'>
+        <view class='vli-left'>
+          <image src='../../images/common/p8.jpg'></image>
+          <view class='vli-mask'>
+            <image src='../../images/video/video.png'></image>
+          </view>
+        </view>
+        <view class='vli-right'>
+          <view class='vli-name'>益智工具积木，能拼成各种类型，环保安全无毒，是小孩子...</view>
+          <view class='vli-hot'>
+            <text space='nbsp'>陆之宝玩具  热度 2541</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+  </view>
+  <template is="footer" />
+</view>
+
+
+<!-- 导航 -->
+<view class='vtab-nav'>
+  <view class='vline'>
+    <view class='top'>
+      <image src='../../images/video/icn-06.png'></image>在线咨询供应商</view>
+    <view class='butt'>（时间:9:00-22:00）</view>
+  </view>
+  <view class='vaddcart'>
+    <view class='top'>
+      <image src='../../images/video/icn-07.png'></image>加入询单</view>
+    <view class='butt'>（时间:24h）</view>
+  </view>
+</view>
+
+<!-- commodity_screen start 分享名片弹出框 -->
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+<view class='wx '><button open-type='share' class='shareButton'><image src='../../images/web/wx.png'></image></button><view>微信好友</view></view>
+<view class='wx '><navigator url=''><image src='../../images/web/pyq.png'></image><view>名片海报</view></navigator></view>
+<view class='quxiao ' bindtap="hideModal">取消</view>
+</view>
+<!-- commodity_screen end -->

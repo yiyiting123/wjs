@@ -1,0 +1,84 @@
+
+.icon{
+  width:40rpx;
+  height: 40rpx;
+}
+
+.icon2{
+  width:44rpx;
+  height: 38rpx;
+}
+.tabBar{
+  width:100%;
+  position: fixed;
+  bottom:0;
+  background:#f3f5f6;
+  font-size:22rpx;
+  color:#999999;
+  z-index: 9999;
+  
+}
+
+ .tabBar-item{
+  float:left;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:20%;
+  text-align: center;
+  overflow: hidden;
+}
+.tabBar-navigator{width:100%;height: auto;position: relative;}
+.tabBar-navigator .icn{min-width: 26rpx;min-height: 26rpx;border-radius: 26rpx;background: #ff4344;color: #fff;font-size: 16rpx;position: absolute;display: flex;align-items: center;justify-content: center;right: 42rpx;top: -3rpx;}
+/*当前字体颜色*/
+.tabBartext{
+  color:#ff4344;
+}
+.navigator-hover{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* 头部 */
+.header{width: 100%;height: auto;background: #fff;box-shadow: 0 1rpx 3rpx rgba(0,0,0,0.1); position: fixed; top: 0;left: 0;z-index: 9999;}
+.header .search{width:710rpx;height: 68rpx;background: #ebebeb;border-radius: 5rpx;margin: 0 auto;font-size: 28rpx;color: #9e9e9e;display: flex;align-items: center;justify-content:center; line-height: 68rpx;}
+.header .search image{width: 35rpx;height: 35rpx;margin-right: 4rpx;}
+/* 头部导航条 */
+.navbar{width:730rpx;height: 68rpx;margin-left: 20rpx;overflow: hidden;}
+.navbar .navlist{width:auto;height: 100%;font-size: 28rpx;line-height: 64rpx;white-space: nowrap;overflow-x: scroll;}
+.navbar .navlist .nav-item{margin:0 30rpx;display: inline-block;}
+.navbar .navlist .select-item{ border-bottom: 4rpx solid #ff4344; color: #ff4344;}
+
+/* 脚部 */
+.footer{width:100%;height: auto;line-height: 80rpx;color: #cacaca;text-align: center;font-size: 24rpx;float: left;margin-bottom: 100rpx;}
+.footer .txtcon{display: inline-block;position: relative;}
+.footer .txtcon::after{content: '';width: 30rpx;height: 1px;background: #cacaca;position: absolute;top: 50%;right: -40rpx;}
+.footer .txtcon::before{content: '';width: 30rpx;height: 1px;background: #cacaca;position: absolute;top: 50%;left: -40rpx;}
+
+/* 进货单 */
+.btnCart{width:180rpx;height: 60rpx;border-radius: 60rpx;text-align: center;position: fixed;left: 20rpx;bottom: 120rpx;z-index: 9999;background: #000;font-size: 28rpx;color: #fff;font-weight: bold;display: flex;align-items: center;justify-content: center;}
+.btnCart .txt{padding-left:38rpx;background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAjCAYAAABsFtHvAAABqklEQVRYhe2XMWsUURSFv1mUBRFMExFiwMZCxEoIFpaCBCytthEhrf4IO0tLizQBEe2iBvwDMRgQBZtggp2k0UBAQYy7n0WuyUvcmTdZNkzhHBjee9zzzpk7M/DOoHKEq6P21NfqlrvYinUv6rX1jmJ8Tl22GsvBG6v5hLp2yOiH+jnGFGvBH5v5fCK+rd5Vu1Hrxno74cyPy3xK7YfojjpTwpuJusGfyml3yGMW9nhPgNUS3mrUCf5sTvjEofnpIZzLyXwFmKjQWwHuJPuGcb8DvwFQJ9UXyaM9bvTVRXWyUF8Ct3KP6BjwqlD7UOvdjxuDQrUBY6CZjlvz1rw1b81bc94A94FPI2gvAA+BnVJG5uyddjfyXPTfoFiF5+7HpcdlpFznV2NcB3qVXezjLTAX8wK4NGrnX9SzHgyJ70u4v9RH6qmEf69KvM55/g64CXxLurkO3ADOAz+Bj8AisJnsuw08o+q7ynT+F+vqNfMxG/Wk+sAambCuuSH2NG6iGGJ6Rp1TN+oKjhqjvgIfYuwCF4ArHIziWfzfGW7QkPegAyw1ZL7U6O/SH3n+7LsjP6lzAAAAAElFTkSuQmCC);background-repeat: no-repeat;background-size: 31rpx 35rpx;line-height: 35rpx;position: relative;}
+.btnCart .txt .icn{min-width: 26rpx;min-height: 26rpx;border-radius: 26rpx;background: #ff2832;color: #fff;font-size: 16rpx;position: absolute;display: flex;align-items: center;justify-content: center;left:16rpx;top: -7rpx;line-height: 26rpx;}
+
+/* 供应商标题栏 */
+.navBar{background: #f3f5f6;width: 100%;}
+.statusBar{width: 100%;background: #f3f5f6;text-align: center;font-size: 32rpx;color: #000;display: flex;align-items: center;position: relative;font-weight: bold;}
+.statusBar .logo{width: 60rpx;height: 60rpx;border-radius: 59rpx;position: absolute;left: 20rpx;}
+.statusBar .logo image{width: 100%;height: 100%; 
+      animation: changeBiger 1.6s infinite linear  ;
+      -webkit-animation:changeBiger 1.6s infinite linear  ;
+      animation-delay: .2s;
+      -webkit-animation-delay: .2s;
+      }
+@keyframes changeBiger {
+0% {
+    transform: scale(1);
+}
+50% {
+    transform: scale(1.2);
+}
+100%{transform: scale(1);}
+}
+.statusBar .statusBarTitle{flex: 1;}
+.statusBar .return{width: 19rpx;height: 33rpx;position: absolute;left: 20rpx;}
+.statusBar .return image{width:100%;height: 100%;}

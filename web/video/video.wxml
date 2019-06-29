@@ -1,0 +1,45 @@
+<!--web/video/video.wxml-->
+<import src="../common/template.wxml" />
+<!-- 状态栏 -->
+<template is="statusBar" data="{{statusBarHeight,statusBarTitle}}"/>
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<!-- 进货单 -->
+<template is="btnCart" data="{{cartNum}}" />
+<view class='container' style='margin-top:{{statusBarHeight+44}}px'>
+ <view class='vnav'><text class="btn {{current==0?'btnselect':''}} ">按热度</text><text class="btn {{current==1?'btnselect':''}} ">按时间</text></view>
+  <!-- 视频列表 ------------------------------点击视频区域播放视频，点击更多进入详情页-->
+  <view class='videolist' >
+    <view class='videoli' wx:for='{{vedio_data}}' wx:key='' >
+      <!-- 视频图片部分 -->
+      <view class='video-img' style="display: {{ _index == index ? 'none' : 'block' }};" bindtap="videoPlay" id="{{index}}">
+        <image src='../../images/common/p10.jpg' class='img'></image>
+        <view class='vmask'>
+          <view class='vm1'>
+            <image src='../../images/web/video.png'></image>
+          </view>
+        </view>
+      </view>
+      <view class='video-play' wx:if="{{_index == index}}">
+        <!-- 视频 -->
+        <video src="{{item.url}}" id="{{index}}" class='video' wx:if="{{_index == index}}" autoplay="{{true}}">
+        </video>
+      </view>
+      <!-- 视频来源部分 -->
+      <view class='video-or'>
+        <navigator class='left' url="/web/productdetail/productdetail">
+          
+          <view class='vname'>我的我的世界展示盒世界展示盒...</view>
+          <view class='vmodel'>NO.832-835</view>
+        </navigator>
+        <view class='right'>
+          <view class='addCart'>
+            <image src='../../images/web/icn-07.png'></image>加入询单</view>
+        </view>
+      </view>
+    </view>
+    
+    
+  </view>
+  <template is="footer" />
+</view>

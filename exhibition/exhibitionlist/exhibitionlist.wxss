@@ -1,0 +1,25 @@
+/* exhibition/exhibitionlist/exhibitionlist.wxss */
+.container{padding: 0 30rpx 0 30rpx;width:690rpx;}
+/* 切换 */
+.search-nav{width:100%;height: auto;}
+.vtab{ display: flex; flex-direction: column; width: 690rpx;  }
+.vtab-nav{ width: 100%rpx; height: 80rpx; background: #fff; display: flex; line-height: 79rpx; position: relative; padding: 15rpx 0; font-size: 30rpx; color: #85898d; flex-wrap: nowrap; overflow-x: scroll; } 
+
+.vtab-item{text-align:center;height: 80rpx;margin-right:40rpx;}
+.tabcurrent{font-size: 34rpx;color: #000;font-weight: bold;position: relative;}
+.tabcurrent::after{position: absolute;bottom: 7rpx;content: "";width: 30rpx;height: 4rpx;border-radius: 4rpx;background: #ff2832;left: 50%;transform: translateX(-15rpx);}
+
+
+/* 展会 */
+.new-col{width:100%;}
+.fontred{color:#ff2832;}
+.n-item{width:100%;height: auto;display: flex;justify-content: space-between;margin-bottom: 30rpx;border-bottom: 1px solid #e6e6e6;padding-bottom: 30rpx;float: left;}
+.n-item .nimg{width:160rpx;height: 160rpx;border-radius: 10rpx;border: 1px solid #e6e6e6;overflow: hidden;box-sizing: border-box;}
+.n-item .nimg image{width:100%;height: 100%;}
+.n-item .nright{width:510rpx;}
+.n-item .nright .font30{width:100%;height: 84rpx;line-height: 42rpx;font-size: 30rpx;color: #000;font-weight: 600;overflow: hidden;text-overflow: ellipsis;}
+.n-item .nright .font22{width:100%;height: 30rpx;line-height: 30rpx;font-size: 22rpx;color: #999999;overflow: hidden;text-overflow: ellipsis;}
+.n-item .nright .icnIntoysol{width:100%;height: auto;font-size: 26rpx;line-height: 54rpx;display: flex;align-items: center;color: #ff2832;}
+.n-item .nright .icnIntoysol image{width:30rpx;height: 26rpx;margin-right: 6rpx;} 
+
+

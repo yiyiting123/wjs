@@ -1,0 +1,180 @@
+<!--my/index/index.wxml-->
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+
+<view class='container'>
+
+  <!-- col1 -->
+  <view class='col1'>
+    <view class='headerimg'>
+      <image src='../../images/common/p18.jpg'></image>
+    </view>
+    <view class='right'>
+      <view class='nickname'>詹皇哲 詹大侠 </view>
+      <view class='font26'>尊敬的客户，欢迎您回来！</view>
+    </view>
+  </view>
+
+  <!-- announcement 公告 -->
+  <view class='ann'>
+    <view class='left'>关于向企业用户开放账号冻结/激活...</view>
+    <navigator class='more'>更多 </navigator>
+  </view>
+
+  <!-- col2 -->
+  <view class='col2'>
+    <view class='title'>我的关注</view>
+    <view class='con'>
+      <navigator class='col_li'>
+        <view class='font34'>2565</view>
+        <view class='font28'>产品</view>
+      </navigator>
+      <i class="hr1"></i>
+      <navigator class='col_li'>
+        <view class='font34'>25</view>
+        <view class='font28'>供应商</view>
+      </navigator>
+      <i class="hr1"></i>
+      <navigator class='col_li'>
+        <view class='font34'>2455</view>
+        <view class='font28'>短视频</view>
+      </navigator>
+    </view>
+  </view>
+
+
+  <!-- col2 -->
+  <view class='col2'>
+    <view class='title'>我的询单</view>
+    <view class='con'>
+      <navigator class='col_li'>
+        <view class='colimg'>
+          <image src='../../images/my/icn-01.png'></image>
+      
+        </view>
+        <view class='font28'>待询单</view>
+      </navigator>
+      <i class="hr1"></i>
+      <navigator class='col_li'>
+        <view class='colimg'>
+          <image src='../../images/my/icn-02.png'></image>
+          <i class="redpoint"></i>
+        </view>
+        <view class='font28'>已完成</view>
+      </navigator>
+    </view>
+  </view>
+
+  <!-- col3 -->
+  <view class='col3'>
+    <navigator class='col3_li'>
+      <view class='colimg'>
+        <image src='../../images/my/icn-05.png'></image>
+        <i class="redpoint"></i>
+      </view>
+      我的信息
+      <image class='go' src='../../images/my/icn-04.png'></image>
+    </navigator>
+    <navigator class='col3_li'>
+      <view class='colimg'>
+        <image src='../../images/my/icn-06.png'></image>
+    
+      </view>
+      修改个人信息
+      <image class='go' src='../../images/my/icn-04.png'></image>
+    </navigator>
+  </view>
+
+  <view class='new-col'>
+    <view class='title'>猜您喜欢</view>
+    <view class='prolist'>
+      <view class='pro'>
+        <navigator url='/web/productdetail/productdetail'>
+          <view class='proimg'>
+            <image src='../../images/common/p2.jpg'></image>
+            <i class='play'>
+              <image src='../../images/pages/icn-03.png'></image>
+            </i>
+          </view>
+        </navigator>
+        <view class='pro-con'>
+          <span class='font2835'>我的我的世界展示盒...</span>
+          <span class='font2635'>NO.832-835</span>
+        </view>
+        <i class="addicon"></i>
+      </view>
+      <view class='pro'>
+        <navigator url='/web/productdetail/productdetail'>
+          <view class='proimg'>
+            <image src='../../images/common/p2.jpg'></image>
+            <i class='play'>
+              <image src='../../images/pages/icn-03.png'></image>
+            </i>
+          </view>
+        </navigator>
+        <view class='pro-con'>
+          <span class='font2835'>我的我的世界展示盒...</span>
+          <span class='font2635'>NO.832-835</span>
+        </view>
+        <i class="addicon"></i>
+      </view>
+      <view class='pro'>
+        <navigator url='/web/productdetail/productdetail'>
+          <view class='proimg'>
+            <image src='../../images/common/p2.jpg'></image>
+            <i class='play'>
+              <image src='../../images/pages/icn-03.png'></image>
+            </i>
+          </view>
+        </navigator>
+        <view class='pro-con'>
+          <span class='font2835'>我的我的世界展示盒...</span>
+          <span class='font2635'>NO.832-835</span>
+        </view>
+        <i class="addicon"></i>
+      </view>
+      <view class='pro'>
+        <navigator url='/web/productdetail/productdetail'>
+          <view class='proimg'>
+            <image src='../../images/common/p2.jpg'></image>
+            <i class='play'>
+              <image src='../../images/pages/icn-03.png'></image>
+            </i>
+          </view>
+        </navigator>
+        <view class='pro-con'>
+          <span class='font2835'>我的我的世界展示盒我的我的世界展示盒...</span>
+          <span class='font2635'>NO.832-835</span>
+        </view>
+        <i class="addicon"></i>
+      </view>
+    </view>
+    <view class='change'><image src='../../images/my/change.png'></image>换一换</view>
+  </view>
+  
+  <!-- my_nav -->
+  <view class='my_nav'>
+  <navigator class='nav_li'>
+  <image src='../../images/my/1.png'></image>
+  <view class='font24'>关于我们</view>
+  </navigator>
+  <navigator class='nav_li'>
+  <image src='../../images/my/2.png'></image>
+  <view class='font24'>联系我们</view>
+  </navigator>
+  <navigator class='nav_li'>
+  <image src='../../images/my/3.png'></image>
+  <view class='font24'>用户协议</view>
+  </navigator>
+  <navigator class='nav_li'>
+  <image src='../../images/my/4.png'></image>
+  <view class='font24'>隐私声明</view>
+  </navigator>
+  <navigator class='nav_li'>
+  <image src='../../images/my/5.png'></image>
+  <view class='font24'>法律声明</view>
+  </navigator>
+  </view>
+  <template is="footer" />
+</view>

@@ -1,0 +1,177 @@
+<import src="../common/template.wxml" />
+<!-- 状态栏 -->
+<template is="statusBarreturn" data="{{statusBarHeight,statusBarTitle}}" />
+<view class='container' style='margin-top:{{statusBarHeight+44}}px'>
+  <!-- 产品图轮播 -->
+  <view class='proimgs'>
+
+    <!-- 轮播图 -->
+    <swiper indicator-dots="{{false}}" autoplay="{{!isPlay}}" interval="5000" duration="500" class='index-swiper' bindchange="swiperChange">
+      <!-- <block wx:for="{{proimgs}}" wx:key="Name" data-data="{{item}}"> -->
+      <swiper-item>
+        <view class='proimg' bindtap='videoPlay' style="display: {{ isPlay ? 'none' : 'block' }};">
+          <image src="../../images/common/p11.jpg" class="slide-image" />
+          <view class='vmask'>
+            <view class='vm1'>
+              <image src='../../images/web/video.png'></image>
+            </view>
+          </view>
+        </view>
+      <view class='video-play' wx:if="{{isPlay}}">
+          <!-- 视频 -->
+          <video src="http://1253151570.vod2.myqcloud.com/2717553dvodgzp1253151570/7fbd6bb25285890789703485005/083CmhTZe7UA.mp4" id="{{index}}" class='video' autoplay="{{true}}">
+          </video>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/common/p9.jpg" class="slide-image" />
+      </swiper-item>
+      <!-- </block> -->
+    </swiper>
+    <view class="dots">
+      <block wx:for="{{proimgs}}" wx:key="Name">
+        <view class="dot {{index == swiperCurrent ? ' active' : ''}}"></view>
+      </block>
+    </view>
+  </view>
+
+  <!-- 产品详情参数区 -->
+  <view class='procon'>
+    <view class='top'>
+      <view class='proname'>早教机器人早教机器人早教机器人早教机器人早教机器人早教</view>
+      <view class='probtn'>
+        <view class='btnLook'>关注</view>
+        <view class='btnShare'  bindtap='showModal'>分享</view>
+      </view>
+    </view>
+    <view class='font26'>获取最新价格请联系我</view>
+    <view class='promain'>
+    <view><text>产品型号：265 </text>    <text>产品包装：彩盒</text></view>
+    <view><text>装箱数量：36包 </text>    <text>装规格：20*11*29.5 cm</text></view>
+    <view><text>外箱规格：93*37*87cm </text>    <text>毛重：17.5kg </text>    <text>净重：15 kg</text></view>
+    <view><text>条形码：6928120703332</text></view>
+    </view>
+  </view>
+  <!-- 厂商信息 -->
+  <view class='vcol'>
+    <view class='vleft'>
+      <!-- logo -->
+      <view class='vcomlogo'>
+        <image src='../../images/common/p7.jpg'></image>
+      </view>
+      <!-- 名称 -->
+      <view class='vcomcon'>
+        <view class='vcomname'>汕头市澄海区陆之宝玩具有限公司</view>
+        <view class='icnIntoysol'>
+          <image src='../../images/web/icn-10.png'></image>
+          <label class='txt'>玩具说第4年</label>
+        </view>
+      </view>
+    </view>
+    <!-- 官网 -->
+    <view class='vright'>
+      <view class='btnInWeb'>
+        <navigator class='btncon' open-type='redirectTo' url='/web/index/index'>
+          <image src='../../images/web/icn-09.png'></image>
+          <label class='txt'>官网</label>
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+  <!-- 产品详情 -->
+  <view class='prodetail'>
+  <view class='title'><label>产品详情</label></view>
+  <view class='imgs'>
+  <image src='../../images/common/p12.jpg' mode='widthFix'></image>
+  </view>
+  </view>
+
+  <!-- 您可能喜欢 -->
+   <view class='list'>
+   <view class='vnav'><view class='font34'>您可能喜欢</view></view>
+<view class='prolist'>
+<view class='pro'>
+<navigator open-type='redirect' url='/web/productdetail/productdetail'>
+  <view class='proimg'>
+    <image src='../../images/common/p2.jpg'></image>
+    <i class='play'>
+      <image src='../../images/web/icn-03.png'></image>
+    </i>
+  </view>
+  </navigator>
+  <view class='pro-con'>
+    <span class='font2835'>我的我的世界展示盒...</span>
+    <span class='font2635'>NO.832-835</span>
+  </view>
+  <i class="addicon"></i>
+</view>
+<view class='pro'>
+<navigator open-type='redirect' url='/web/productdetail/productdetail'>
+  <view class='proimg'>
+    <image src='../../images/common/p2.jpg'></image>
+    <i class='play'>
+      <image src='../../images/web/icn-03.png'></image>
+    </i>
+  </view>
+  </navigator>
+  <view class='pro-con'>
+    <span class='font2835'>我的我的世界展示盒...</span>
+    <span class='font2635'>NO.832-835</span>
+  </view>
+  <i class="addicon"></i>
+</view>
+<view class='pro'>
+<navigator open-type='redirect' url='/web/productdetail/productdetail'>
+  <view class='proimg'>
+    <image src='../../images/common/p2.jpg'></image>
+    <i class='play'>
+      <image src='../../images/web/icn-03.png'></image>
+    </i>
+  </view>
+  </navigator>
+  <view class='pro-con'>
+    <span class='font2835'>我的我的世界展示盒...</span>
+    <span class='font2635'>NO.832-835</span>
+  </view>
+  <i class="addicon"></i>
+</view>
+<view class='pro'>
+<navigator open-type='redirect' url='/web/productdetail/productdetail'>
+  <view class='proimg'>
+    <image src='../../images/common/p2.jpg'></image>
+    <i class='play'>
+      <image src='../../images/web/icn-03.png'></image>
+    </i>
+  </view>
+  </navigator>
+  <view class='pro-con'>
+    <span class='font2835'>我的我的世界展示盒...</span>
+    <span class='font2635'>NO.832-835</span>
+  </view>
+  <i class="addicon"></i>
+</view>
+</view>
+   </view>
+  <template is="footer" />
+</view>
+
+<!-- 产品详情导航栏 -->
+<view class='pronavTab'>
+<view class='left'>
+<navigator class='li li1' open-type="reLaunch" url='/web/index/index'>首页</navigator>
+<navigator class='li li2' open-type="reLaunch" >进货单</navigator>
+<navigator class='li li3' open-type="reLaunch" >我的</navigator>
+</view>
+<view class='cen'>联系供应商</view>
+<view class='right'>加入询货单</view>
+</view>
+
+<!-- commodity_screen start 分享名片弹出框 -->
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+<view class='wx '><button open-type='share' class='shareButton'><image src='../../images/web/wx.png'></image></button><view>微信好友</view></view>
+<view class='wx '><navigator url=''><image src='../../images/web/pyq.png'></image><view>名片海报</view></navigator></view>
+<view class='quxiao ' bindtap="hideModal">取消</view>
+</view>
+<!-- commodity_screen end -->

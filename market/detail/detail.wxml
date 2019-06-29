@@ -1,0 +1,50 @@
+<!--market/detail/detail.wxml-->
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<view class='container'>
+<!-- 标题 -->
+  <view class="ntitle">供应TPE TPR厂家直销，深圳品质值得信赖PR厂家直销PR厂家直销！</view>
+  <!-- 信息来源 -->
+  <view class="market-li">
+      <navigator>
+        <view class="li-top">
+          <view class="li-logo">
+            <image src="../../images/common/p18.jpg"></image>
+          </view>
+          <view class="li-right">
+            <view class="m-name">深圳盛嘉伦 TPE TPR Mr.Hu
+              <i class='supply'>供应商</i>
+            </view>
+            <view class="m-time">广东省-汕头市<span class='font0f73a5'>15847963608 (9:00-18:00)</span> </view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+    <!-- 编辑器内容 -->
+    <view class="ncon">
+    高价买卖厂家库存清仓处理玩具，公司样品，尾货套现，高价现金收购！ 联系电话 15817963608【微信同号】致力库存买卖十年老牌！货套现，高价现金收购！ 联系电话 15817963608【微信同号】致力库存买卖十年老牌！
+    </view>
+    <!-- 图片 -->
+    <view class="imgs">
+    <view class="imgli"><image src="../../images/common/p19.jpg"></image></view>
+    <view class="imgli"><image src="../../images/common/p19.jpg"></image></view>
+    <view class="imgli nomar"><image src="../../images/common/p19.jpg"></image></view>
+    <view class="imgli"><image src="../../images/common/p19.jpg"></image></view>
+    <view class="imgli"><image src="../../images/common/p19.jpg"></image></view>
+    </view>
+    <!-- 免责声明 -->
+    <view class="disclaimer">
+    <view class="font2232">免责声明：</view>
+    <view class="font2232">本信息由买家/卖家自行发起，内容的真实性、准确性和合法性由发布者负责。玩具说平台对此不承担任何保证与法律责任。</view>
+    </view>
+  <template is="footer" />
+</view>
+
+
+<!-- 加号按钮 -->
+<navigator url="/market/publish/publish">
+<view class="btnadd">
+<i class="icnadd"></i>
+</view>
+</navigator>

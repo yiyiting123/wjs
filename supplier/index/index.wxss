@@ -1,0 +1,36 @@
+/* supplier/index/index.wxss */
+.title{width:100%;height: 100rpx;line-height: 100rpx;font-size: 34rpx;color: #000;font-weight: bold;}
+.new-col{width: 690rpx;height: auto;padding: 0 30rpx;background: #fff;}
+.more{float: right;font-size: 26rpx;font-weight: 300;color: #999;}
+/* 玩具品牌推荐 */
+.pinpai-col{width:750rpx;height: auto;padding: 0 0;}
+.pinpai-col .title{width:690rpx;height: 100rpx;line-height: 100rpx;font-size: 34rpx;color: #000;font-weight: bold;margin: 0 30rpx;}
+.pinpai-slider{width:100%;height: 368rpx;}
+.pinpai-slider .pinpai-swiper{width:100%;height: 100%;}
+.pinpai-slider .pinpai-swiper swiper-item{display: flex;justify-content: center;}
+.pinpai-item{width:690rpx;height: 100%;position: relative;border-radius: 10rpx;overflow: hidden;}
+.pinpai-item .v-img{width:100%;height: 100%;position: absolute;z-index: 1;left: 0;top: 0;border-radius: 10rpx;overflow: hidden;}
+.pinpai-item .vicn{width:27rpx;height: 16rpx;position: absolute;z-index: 3;right: 0;bottom: 0;}
+.more .font28{font-size: 28rpx;color: #000;}
+.more .font22{font-size: 22rpx;color: #737373;}
+
+/* 品牌荟萃 */
+.col-con{width:100%;height: auto;padding-bottom: 20rpx;float: left;border-bottom: 1px solid #e6e6e6;}
+.col-con .pp-item{width:216rpx;height: auto; display: inline-block;margin-right: 21rpx;margin-bottom: 5rpx;}
+.col-con .pp-item .pimg{width:216rpx;height: 216rpx;border-radius: 10rpx;box-sizing: border-box;border: 1px solid #e6e6e6;overflow: hidden;}
+.col-con .pp-item .pimg image{width:100%;height: 100%;}
+.col-con .pp-item .pname{width:100%;height: 54rpx;font-size: 28rpx;color: #000;line-height: 54rpx;text-align: center;}
+
+.col-con .nomar{margin-right: 0;}
+
+/* 最新进驻供应商 */
+.fontred{color:#ff2832;}
+.n-item{width:100%;height: auto;display: flex;justify-content: space-between;margin-bottom: 20rpx;}
+.n-item .nimg{width:120rpx;height: 120rpx;border-radius: 10rpx;border: 1px solid #e6e6e6;overflow: hidden;}
+.n-item .nimg image{width:100%;height: 100%;}
+.n-item .nright{width:555rpx;}
+.n-item .nright .font30{width:100%;height: 42rpx;line-height: 42rpx;font-size: 30rpx;color: #000;font-weight: 600;overflow: hidden;text-overflow: ellipsis;}
+.n-item .nright .font26{width:100%;height: 78rpx;line-height: 39rpx;font-size: 26rpx;color: #999999;overflow: hidden;text-overflow: ellipsis;}
+
+.areacol .col-con{border-bottom: none;padding-bottom: 0;}
+.s-item{width:216rpx;height: 80rpx;border-radius: 10rpx;background: #f3f5f6;overflow: hidden;text-align: center;line-height: 80rpx;font-size: 28rpx;display: inline-block;margin-right: 21rpx;margin-bottom: 20rpx;float: left;}

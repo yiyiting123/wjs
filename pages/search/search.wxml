@@ -1,0 +1,64 @@
+<!--pages/search/search.wxml-->
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<view class='container'>
+  <!-- 搜索切换 -->
+  <view class='search-nav'>
+  <!-- /pages/productlist/productlist -->
+    <view class="sea-li {{current==0?'sea-current':''}}" bindtap='changeSearchType' data-index='0'>产品</view>
+    <!-- /supplier/supplierlist/supplierlist -->
+    <view class="sea-li {{current==1?'sea-current':''}}" bindtap='changeSearchType' data-index='1'>供应商</view>
+    <!-- /video/videolist/videolist -->
+    <view class="sea-li {{current==2?'sea-current':''}}" bindtap='changeSearchType' data-index='2'>短视频</view>
+  </view>
+  <!-- 搜索框 -->
+  <view class='search-inp'>
+    <view class="seacon {{inpfocus?'disno':''}}" bindtap='getInputFocus'>
+      <image src='../../images/pages/icn-01.png'></image>请您输入搜索关键词</view>
+    <input class="inp {{inpfocus?'':'disno'}}" placeholder='请您输入搜索关键词' focus="{{inpfocus?'true':''}}" bindconfirm='getInputFocus' bindconfirm='getSearchResults'></input>
+  </view>
+
+  <!-- 搜索关键词 -->
+  <view class='search-keyword'>
+    <view class='sea-tit'>热门关键词</view>
+    <view class='sea-con'>
+      <view class='kw-li'>小猪佩奇</view>
+      <view class='kw-li'>吃鸡玩具</view>
+      <view class='kw-li'>大颗粒积木</view>
+      <view class='kw-li'>小猪佩奇</view>
+      <view class='kw-li'>水枪大颗粒积木大颗粒积木</view>
+      <view class='kw-li'>大颗粒积木</view>
+    </view>
+  </view>
+
+
+  <!-- 广告位 -->
+    <view class='inn-ad'>
+      <view class='ad-con'>
+        <navigator url="">
+          <image class='adimg' src='../../images/common/gg.jpg'></image>
+        </navigator>
+        <image class='i' src='../../images/common/icn-02.png'></image>
+      </view>
+    </view>
+    <!-- 广告位 -->
+    <view class='inn-ad'>
+      <view class='ad-con'>
+        <navigator url="">
+          <image class='adimg' src='../../images/common/gg.jpg'></image>
+        </navigator>
+        <image class='i' src='../../images/common/icn-02.png'></image>
+      </view>
+    </view>
+    <!-- 广告位 -->
+    <view class='inn-ad'>
+      <view class='ad-con'>
+        <navigator url="">
+          <image class='adimg' src='../../images/common/gg.jpg'></image>
+        </navigator>
+        <image class='i' src='../../images/common/icn-02.png'></image>
+      </view>
+    </view>
+     <template is="footer" />
+</view>

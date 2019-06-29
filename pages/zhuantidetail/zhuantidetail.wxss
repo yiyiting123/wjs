@@ -1,0 +1,35 @@
+.newsimg{width:100%;height: 325rpx;}
+.newsimg image{width: 100%;height: 100%;}
+
+.newscon{width:100%;height: auto;padding: 20rpx 30rpx;box-sizing: border-box;background: #f3f5f6;}
+.newscon .newstitle{width:100%;height: auto;font-size: 38rpx;color: #000;font-weight: bold;line-height: 46rpx;margin: 10rpx 0;}
+.newscon .font3042{width:100%;height: auto;font-size: 30rpx;line-height: 42rpx;color: #999;margin: 10rpx 0;}
+.newscon .font3042 text{padding-right: 20rpx;}
+.newscon .font2632{width:100%;height: auto;font-size: 26rpx;line-height: 32rpx;color: #999;margin: 10rpx 0;}
+
+/* 热门供应商 */
+.hotsupplier{width:100%;height: auto;padding: 0 30rpx;box-sizing: border-box;}
+.title{width:100%;height: 100rpx;line-height: 100rpx;font-size: 34rpx;color: #000;font-weight: bold;}
+.more{float: right;font-size: 26rpx;font-weight: 300;color: #999;}
+.supplierlist{width: 100%;height: auto;padding-bottom: 50rpx;border-bottom: 1px solid #e6e6e6;overflow: hidden;}
+
+.col-con{width:100%;height: auto;float: left;white-space: nowrap;overflow-x: scroll;}
+.col-con .pp-item{width:190rpx;height: auto; display: inline-block;margin-right: 20rpx;}
+.col-con .pp-item .pimg{width:190rpx;height: 190rpx;border-radius: 10rpx;box-sizing: border-box;border: 1px solid #e6e6e6;overflow: hidden;}
+.col-con .pp-item .pimg image{width:100%;height: 100%;}
+.col-con .pp-item .pname{width:100%;height: 54rpx;font-size: 28rpx;color: #000;line-height: 54rpx;text-align: center;}
+.col-con .pp-item:last-child{margin-right: 0;}
+
+
+/* 热销产品 */
+.hotprolist{width:100%;height: auto;padding: 0 30rpx;box-sizing: border-box;}
+.prolist{width:100%;display: flex;flex-wrap:wrap;justify-content:space-between;}
+.prolist .pro{width:335rpx;background: #fff;border-radius: 10rpx;border: 1px solid #e6e6e6;box-sizing: border-box; overflow: hidden;margin-bottom: 20rpx;position: relative;height: 360rpx;}
+.prolist .pro .proimg{width:100%;height: 260rpx;position: relative;}
+.prolist .pro .proimg .play{width:68rpx;height: 68rpx;position: absolute;bottom: 20rpx;left: 20rpx;}
+.prolist .pro image{width:100%;height: 100%;float: left;}
+.prolist .pro .pro-con{width:100%;height: auto;box-sizing: border-box;padding: 10rpx 25rpx;float: left;}
+.prolist .pro .pro-con .font2835{width:100%;height: 45rpx;line-height: 45rpx; font-size: 28rpx;color: #000;overflow: hidden;text-overflow: ellipsis;display:inline-block;float: left;}
+.prolist .pro .pro-con .font2635{width:100%;height: 35rpx;line-height: 35rpx; font-size: 26rpx;color: #999;overflow: hidden;text-overflow: ellipsis;display:inline-block;float: left;}
+
+.prolist .pro .addicon{width:28rpx;height: 28rpx;background: #ff2832;border-radius: 28rpx;position: absolute;bottom: 15rpx;right: 20rpx;display: flex;justify-content: center;align-items: center;font-size: 28rpx;color: #fff;font-weight: 600;line-height: 28rpx;background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAABsUlEQVRIib3WPWtTURjA8V9OoVM7ODmL1cY1koBv1Umwori5KAp+CfsJ7McoOAkOQtXgWCsWopkVTXDVyaFZLNg4nHMlvW2Te425fzjDPec+z/++nJenNqw3TKCGK7iJS1jCiTT2Ez28x0tsYzg22RhhwEOsJUkReniCDeyXEZ7CMzQLivJ8wF18yw+EA1efunANnSlkUmwHK/mB/Btexybmp5CNsofbeJN1jL7hMp4XknW2YpvMfMq5nBfO4SkWi2SxuBBbMRZS7rlR4QPT/bNJNMUZL4jrbG2GsozHqAVxJhVdZ9OwhJWA1QpkGasBFysUXgg4U6HwbG1Yb/ySX3udrTLT/mh2B7Su5nv3wlH3zpLasN74jpOlouKey7nzZX0/Ar6WjZqCLwE7FQp3Al5VKHwd8FY8qWdND9tBrEHWKxCuYz9bFhv4OENZNzn+Hk+/cR+DQuG7g9iKMcC95DhUYtzAC/+3xLiDdtaR32na6YbCjz+GQV52lDCTNsXv/q90U452fuC4vfQzWniEfglRP8W0Uo5DjKu8Rx/qMm6JZ+dpB0v9vljqb+KdYyrujD+FHV7J16950wAAAABJRU5ErkJggg==);background-size: contain;background-repeat: no-repeat;}

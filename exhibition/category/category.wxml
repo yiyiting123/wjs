@@ -1,0 +1,23 @@
+<!--exhibition/category/category.wxml-->
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+
+<view class='container'>
+ <!-- 按地区找展会 -->
+  <view class='new-col areacol'>
+    <view class='title'>按地区找展会
+    </view>
+    <view class='col-con'>
+      <navigator class='s-item'  url='/exhibition/exhibitionlist/exhibitionlist'>国内(1568)</navigator>
+      <navigator class='s-item'  url='/exhibition/exhibitionlist/exhibitionlist'>港澳台(45)</navigator>
+      <navigator class='s-item nomar'  url='/exhibition/exhibitionlist/exhibitionlist'>国际(45)</navigator>
+      <navigator class='s-item'  url='/exhibition/exhibitionlist/exhibitionlist'>国内(1568)</navigator>
+      <navigator class='s-item'  url='/exhibition/exhibitionlist/exhibitionlist'>港澳台(45)</navigator>
+      <navigator class='s-item nomar'  url='/exhibition/exhibitionlist/exhibitionlist'>国际(45)</navigator>
+    </view>
+  </view>
+  
+
+  <template is="footer" />
+</view>

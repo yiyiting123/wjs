@@ -1,0 +1,45 @@
+<!--supplier/brandlist/brandlist.wxml-->
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<view class='container'>
+
+<!-- 品牌荟萃 -->
+  <view class='new-col'>
+    <view class='title'>品牌荟萃
+    </view>
+    <view class='col-con'>
+      <navigator class='pp-item' url='/web/index/index'>
+        <view class='pimg'>
+          <image src='../../images/common/p5.jpg'></image>
+        </view>
+        <view class='pname'>华达玩具</view>
+      </navigator>
+      <navigator class='pp-item'>
+        <view class='pimg'>
+          <image src='../../images/common/p5.jpg'></image>
+        </view>
+        <view class='pname'>华达玩具</view>
+      </navigator>
+      <navigator class='pp-item nomar'>
+        <view class='pimg'>
+          <image src='../../images/common/p5.jpg'></image>
+        </view>
+        <view class='pname'>华达玩具</view>
+      </navigator>
+      <navigator class='pp-item'>
+        <view class='pimg'>
+          <image src='../../images/common/p5.jpg'></image>
+        </view>
+        <view class='pname'>华达玩具</view>
+      </navigator>
+      <navigator class='pp-item'>
+        <view class='pimg'>
+          <image src='../../images/common/p5.jpg'></image>
+        </view>
+        <view class='pname'>华达玩具</view>
+      </navigator>
+    </view>
+  </view>
+    <template is="footer" />
+</view>

@@ -1,0 +1,26 @@
+/* my/orderlist/orderlist.wxss */
+.container{padding: 15rpx 0 0 0;}
+/* 切换 */
+.search-nav{width:690rpx;height: 65rpx;margin-bottom: 18rpx;margin-left: 30rpx;margin-right: 30rpx;}
+.search-nav .sea-li{margin-right: 40rpx;float: left;font-size: 30rpx;color: #85898d;line-height: 60rpx;position: relative;}
+.search-nav .sea-current{font-size: 34rpx;color: #000;font-weight: bold;}
+.search-nav .sea-current::after{position: absolute;bottom: -4rpx;content: "";width: 30rpx;height: 4rpx;border-radius: 4rpx;background: #ff2832;right: 50%;transform: translateX(15rpx);}
+
+/* orderlist */
+.orderlist{width: 690rpx;height: auto;margin-left: 30rpx;margin-right: 30rpx;}
+.order{background: #f3f5f6;border-radius: 10rpx;margin-bottom: 20rpx;padding: 30rpx;width: 100%;box-sizing: border-box;float: left;}
+.order .o-top{width:100%;height: auto;font-size: 30rpx;line-height: 40rpx;color: #000;margin-bottom: 30rpx;}
+.order .o-top .o-left{padding-left: 38rpx;background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAADs0lEQVRIie2Xy09TWRzHvxZY0FqhTHjt3CkpbWcCKCY0TIwomKgbEDbqSseC8lBn/oMZF4L4wI0bBXY+RsFx6oxENIghPhi1QR0QtGywMCPo5R7EFn6T38m9WLhVR2ld+U3O7Xl+P/3dc9Lf6RJFFYgkq8W8B0AhADeA9AhTPqYAgC4ANxRVNEWcy/DwAmAFgFsAKIqlm30XsuZFbrWYlwPo4UidTif27T+AArcb6emfHnggEMDNri401B+Cz+fjrhcA1iiqeK7PWQj3AijevGULTje3ICEhwWD6qQoGg9ixfRsutbfzyiuKKkoMcKvFXAbgTGZmJv66/wCWpUsXDdalTk7iu29dGBkZ4Z5SRRXnuWIKm7OTH3X79kcVzGK/mto6vfmDXpGRWy3mzQDaeG99fY+QmJhoMFispqamYM9aibGxMXbapKjiNz1yDz/2VlfHBMxiX/bXVCUjB7AOwNWUlBQ8evwk6q88XLz3WStXYHx8nHvXceQVXNvt8cQUDG3vd3sq9WYFwwu4VlpWZpgcC5WWlequbn7tIQBxE68VxMXFxRweCoVgS1rG1RmOXB4/7RTGXNp+s16atB9/dHZe+yLwW93derWL4R1cO9rYKF/Jh7TY8ZmZGTQ2Hn4HV1RxEsDNvr4+1NXWYHZ21rCIdf16JwrdBTJhRNLo6CjWfl+Ijo6OCKOQvj/9eAD37t7l5j1FFUf0NJrFOYBT6Or8fPr1YhsFxv6hidcK9dy+Q5VVVRQfH08ZGRmUmppKh+ob6En/ACmqoP6ng1TfcJjS0tLkuMlkop27dsl1LydeSZ8Lbe1U4HaHp2iX5Grwb7jTZrNRcnJyxDzuqaykoed+cjqdhjEuDoeDnvmHaW91tWGMi9W6jJKSkvS2LRzu4E673U4Dg0NUU1tHOTk5sl1eXkGXvV4ZJZd/xyfoeNMJKioqouzsbPl57HiT7NfnXPnjT9q6tZxcLhfl5OZKv8d/90s/De6Yu0xYLWaGP7Tb7ei5fcewX9FS/qo88NkC4FRU4TPFjPQ/9BX+Vj7eBg0ToqlgcO5HKBQO9/NjeNiPyUklJmDO5X7/3MX12RxcUcUbAN7p6Wm0NLcYFkZDra2tYH/tBsu8ebdXTrRnzWYzLv/uRW5eXtTAvb29KCneAKGq3CxXVHEG4addUcU5AM1CCGwsKcbBX37G0ODgR5PF+8RJhNezT8mG9Tq4RQfr0IV/l05F+a+SXk5HYEUUXyr5SwxoJ/NzYLyO17MP+80XgP8AN144ZhdXiLAAAAAASUVORK5CYII=);background-size: 31rpx 30rpx;background-position:left center;background-repeat: no-repeat;font-weight: bold;display: inline-flex;align-items: center;}
+.order .o-top .o-left::after{content: '';width: 11rpx;height: 40rpx;background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAUCAYAAABbLMdoAAAAdUlEQVQokd3RsQmAQAyF4R+udBg9J3EuNxB7XcAhdBdtbCxPAimCxx1nqQ/ShO+RIg6ogA44dbJZgADsgM9Byaq4qNAAx5tC+9NCHSkT/yhskTBx5mEh912Bk4EyQ6QScNb956BkLIWSy0C5kISSXgtyIQ2BG6+dTaiCvOwiAAAAAElFTkSuQmCC);background-size: contain;background-position: left center;background-repeat: no-repeat;margin-left: 10rpx;}
+.order .o-top .o-lab{float: right;color: #ff2832;}
+
+/* o-pros */
+.o-pros{width:100%;height: auto;}
+.o-pros .proimg{width:165rpx;height: 128rpx;border-radius: 10rpx;box-sizing: border-box;box-decoration-break: 1px solid #e6e6e6;overflow: hidden;display: inline-block;margin-right: 10rpx;float: left;}
+.o-pros .proimg image{width: 100%;height: 100%;}
+.o-pros .promore{width:68rpx;height: 128rpx;background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAAQCAYAAACvDNlTAAABL0lEQVRYhe2XQWoCMRSGv46g59ClXXiH4kLRY0wXLnsRu+pCao9RcCHeQWi7LNNTiIIij75BmcyMSUBJwG+Zl39++Ele3jxkWUaBLpACQ6CtpV9gAcyBn6LAkyB9zgNpAlNgAiTGZ/85AO/AC7AxqnYE7ZMHIuJPoG9Iyllp4rvSajXB++TJvTqIhSdN35XgfeSEPAJroGFsq2cP9IDv2l0novBJtOG4ilFNaqxWE4WPBDIwSva4aKPwkSuz1SbkgzS7lqUwCp+q58j6A8bKdbiZT6JDii9/DroofBKd2HxZOuii8JFAPvTJcWWvo68tUfhIIF/AzChfZqZaW6LwuY/uBZ/8lRHDEfCmPzxVHDTJsWfnD96n7PdfRt9nHXA6ulE2SWOTu+xyfOsIzwc4AhCqkm6O1MwpAAAAAElFTkSuQmCC);background-repeat: no-repeat;background-size: contain;background-position: left center;float: left;margin-right: 10rpx;margin-left: 25rpx;}
+
+/* o-bott */
+.o-bott{width:100%;text-align: right;margin-top: 20rpx;float: left;}
+.o-bott .font26{display: inline-block;font-size: 26rpx;color: #999;line-height: 60rpx;}
+.o-bott .btnDel{display: inline-block;border-radius: 60rpx;border: 1px solid #e6e6e6;box-sizing: border-box;text-align: center;line-height: 60rpx;font-size: 28rpx;color: #999;width: 160rpx;margin-left: 20rpx;}

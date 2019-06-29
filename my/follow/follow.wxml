@@ -1,0 +1,89 @@
+<!--my/follow/follow.wxml-->
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+
+<view class='container'>
+  <!-- 切换 -->
+  <view class='search-nav'>
+    <view class='sea-li sea-current'>产品</view>
+    <view class='sea-li'>供应商</view>
+    <view class='sea-li'>短视频</view>
+  </view>
+
+  <view class='cartlist'>
+  <!-- 我的关注--------产品 -->
+  <block wx:for="{{cartList}}" wx:key="Name" data-data="{{item}}">
+    <view class="cart_li" >
+      <view class="item1  {{item.offsetX?'prooffsetX':''}}">
+        <navigator class='left' url='/web/productdetail/productdetail'>
+          <view class='img'>
+            <image src='../../images/common/p3.jpg'></image>
+          </view>
+          <view class='con'>
+            <view class='font30'>我的我的世界展示盒我的我的世界展示盒...</view>
+            <view class='font26'>NO.832-835</view>
+          </view>
+        </navigator>
+        <view class='btnmore'  data-index="{{index}}" bindtap="{{item.offsetX?'rightslide':'leftslide'}}"></view>
+      </view>
+      <view class="item2 ">
+      <view class='btn btncancel'>取消关注</view>
+      <view class='btn btnaddcart'>加入询单</view>
+      </view>
+    </view>
+    </block>
+    <!-- 我的关注--------产品 -->
+
+    <!-- 我的关注--------供应商 -->
+    <block wx:for="{{cartList}}" wx:key="Name" data-data="{{item}}">
+    <view class="cart_li " >
+      <view class="item1  {{item.offsetX?'supoffsetX':''}} supplier">
+        <navigator class='left' url='/web/index/index'>
+          <view class='img'>
+            <image src='../../images/common/p5.jpg'></image>
+          </view>
+          <view class='con'>
+            <view class='font30'>汕头市恒泰科技有限公司</view>
+            <view class='icnIntoysol'>
+            <label class='txt'>玩具说VIP第4年</label>
+          </view>
+          <view class='font22'>主营产品：电动童车 滑行车 沙滩玩具 遥控船 坐便器 轨道车 小颗粒积木</view>
+          </view>
+        </navigator>
+        <view class='btnmore'  data-index="{{index}}" bindtap="{{item.offsetX?'rightslide':'leftslide'}}"></view>
+      </view>
+      <view class="item2 ">
+      <view class='btn btncancel'>取消关注</view>
+      </view>
+    </view>
+    </block>
+    <!-- 我的关注--------供应商 -->
+
+    <!-- 我的关注--------短视频 -->
+    <block wx:for="{{cartList}}" wx:key="Name" data-data="{{item}}">
+    <view class="cart_li"  >
+      <view class="item1  {{item.offsetX?'supoffsetX':''}} vli">
+        <navigator class='left' url='/video/detail/detail'>
+          <view class='vli-left'>
+          <image src='../../images/common/p8.jpg'></image>
+          <view class='vli-mask'>
+            <image src='../../images/common/video.png'></image>
+          </view>
+        </view>
+          <view class='con'>
+            <view class='font30'>我的我的世界展示盒我的我的世界展示盒...</view>
+            <view class='font26'>NO.832-835</view>
+          </view>
+        </navigator>
+        <view class='btnmore'  data-index="{{index}}" bindtap="{{item.offsetX?'rightslide':'leftslide'}}"></view>
+      </view>
+      <view class="item2 ">
+      <view class='btn btncancel'>取消关注</view>
+      </view>
+    </view>
+    </block>
+    <!-- 我的关注--------短视频 -->
+  </view>
+  <template is="footer" />
+</view>

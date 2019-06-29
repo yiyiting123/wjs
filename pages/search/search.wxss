@@ -1,0 +1,28 @@
+/* pages/search/search.wxss */
+.container{padding: 30rpx 30rpx 0 30rpx;width:690rpx;}
+
+/* 搜索切换 */
+.search-nav{width:100%;height: 65rpx;margin-bottom: 20rpx;}
+.search-nav .sea-li{margin-left:30rpx;margin-right:10rpx;float: left;font-size: 30rpx;color: #85898d;line-height: 60rpx;position: relative;}
+.search-nav .sea-current{font-size: 34rpx;color: #000;font-weight: bold;}
+.search-nav .sea-current::after{position: absolute;bottom: -4rpx;content: "";width: 30rpx;height: 4rpx;border-radius: 4rpx;background: #ff2832;right: 50%;transform: translateX(15rpx);}
+
+
+/* 搜索框 */
+.search-inp{width:100%;height: 80rpx;background: #f4f6f6;border-radius: 80rpx;}
+.search-inp .seacon{width:100%;height: 100%;line-height: 80rpx;color: #9e9e9e;font-size: 28rpx;text-align: center;}
+.search-inp .seacon image{width:33rpx;height: 32rpx;margin-right: 10rpx;position: relative;top: 5rpx;}
+.search-inp .inp{width:630rpx;height: 100%;line-height: 80rpx;color: #000;font-size: 28rpx;padding: 0 30rpx;}
+.search-inp .disno{display: none;}
+
+/* 搜索关键词 */
+.search-keyword{width:100%;height: auto;margin: 30rpx 0 35rpx 0;}
+.search-keyword .sea-tit{width:100%;height: 80rpx;line-height: 80rpx;color: #000;font-size: 28rpx;text-indent: 30rpx;}
+.search-keyword .sea-con{width: 100%;height: auto;display: flex;flex-wrap: wrap;font-size: 28rpx;color: #0f73a5;line-height: 70rpx;}
+.search-keyword .sea-con .kw-li{padding: 0 30rpx;min-width: 33%;box-sizing: border-box;}
+
+/* 广告条 */
+.inn-ad{width:690rpx;height: auto; display: flex;justify-content: center;background: #fff;margin-bottom: 20rpx;}
+.inn-ad .ad-con{width: 690rpx;height: 120rpx;border-radius: 10rpx; position: relative;box-shadow: 0 0 10rpx rgba(0,0,0,0.3);overflow: hidden;}
+.inn-ad .ad-con .adimg{width:690rpx;height: 120rpx;border-radius: 10rpx;}
+.inn-ad .ad-con .i{width: 27rpx;height: 16rpx;position: absolute;right: 0;bottom: 0;border-radius: 5rpx 0 0 0;}

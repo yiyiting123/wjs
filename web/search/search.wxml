@@ -1,0 +1,36 @@
+<!--pages/search/search.wxml-->
+<import src="../common/template.wxml" />
+<!-- 状态栏 -->
+<template is="statusBarreturn" data="{{statusBarHeight,statusBarTitle}}"/>
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<!-- 进货单 -->
+<template is="btnCart" data="{{cartNum}}"/>
+<view class='container' style='margin-top:{{statusBarHeight+44}}px'>
+  <!-- 搜索切换 -->
+  <view class='search-nav'>
+    <view class='sea-li sea-current'>产品</view>
+  </view>
+  <!-- 搜索框 -->
+  <view class='search-inp'>
+    <view class="seacon {{inpfocus?'disno':''}}" bindtap='getInputFocus'>
+      <image src='../../images/web/icn-08.png'></image>请您输入搜索关键词</view>
+    <input class="inp {{inpfocus?'':'disno'}}" placeholder='请您输入搜索关键词' focus="{{inpfocus?'true':''}}" bindconfirm='getInputFocus' bindconfirm='getSearchResults'></input>
+  </view>
+
+  <!-- 搜索关键词 -->
+  <view class='search-keyword'>
+    <view class='sea-tit'>您搜索过关键词</view>
+    <view class='sea-con'>
+      <view class='kw-li'>小猪佩奇</view>
+      <view class='kw-li'>吃鸡玩具</view>
+      <view class='kw-li'>大颗粒积木</view>
+      <view class='kw-li'>小猪佩奇</view>
+      <view class='kw-li'>水枪大颗粒积木大颗粒积木</view>
+      <view class='kw-li'>大颗粒积木</view>
+    </view>
+  </view>
+
+
+     <template is="footer" />
+</view>

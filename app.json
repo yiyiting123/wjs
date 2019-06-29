@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "web/index/index",
+    "web/productdetail/productdetail",
+    "my/orderlist/orderlist",
+    "my/index/index",
+    "my/follow/follow",
+    "web/category/category",
+    "my/login/login",
+    "market/publish/publish",
+    "pages/category/category",
+    "market/index/index",
+    "market/detail/detail",
+    "pages/index/index",
+    "video/index/index",
+
+    "exhibition/exhibitionnewslist/exhibitionnewslist",
+    "exhibition/exhibitionlist/exhibitionlist",
+    "exhibition/category/category",
+    "exhibition/index/index",
+
+    "pages/productlist/productlist",
+    "pages/zhuantidetail/zhuantidetail",
+    "pages/zhuanti/zhuanti",
+    "pages/search/search",
+    
+
+    "supplier/supplierlist/supplierlist",
+    "supplier/index/index",
+    "supplier/category/category",
+    "supplier/brandlist/brandlist",
+
+    "web/search/search",
+    "web/video/video",
+    "web/productlist/productlist",
+    "web/about/about",
+
+    "news/detail/detail",
+    "news/index/index",
+
+    "video/videolist/videolist",
+    "video/detail/detail",
+
+    "pages/logs/logs"
+  ], 
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f3f5f6",
+    "navigationBarTitleText": "玩具说",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

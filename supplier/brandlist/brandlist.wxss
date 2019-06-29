@@ -1,0 +1,12 @@
+/* supplier/brandlist/brandlist.wxss */
+.title{width:100%;height: 100rpx;line-height: 100rpx;font-size: 34rpx;color: #000;font-weight: bold;}
+.new-col{width: 690rpx;height: auto;padding: 0 30rpx;background: #fff;}
+
+/* 品牌荟萃 */
+.col-con{width:100%;height: auto;padding-bottom: 20rpx;float: left;}
+.col-con .pp-item{width:216rpx;height: auto; display: inline-block;margin-right: 21rpx;margin-bottom: 5rpx;}
+.col-con .pp-item .pimg{width:216rpx;height: 216rpx;border-radius: 10rpx;box-sizing: border-box;border: 1px solid #e6e6e6;overflow: hidden;}
+.col-con .pp-item .pimg image{width:100%;height: 100%;}
+.col-con .pp-item .pname{width:100%;height: 54rpx;font-size: 28rpx;color: #000;line-height: 54rpx;text-align: center;}
+
+.col-con .nomar{margin-right: 0;}

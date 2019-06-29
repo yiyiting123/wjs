@@ -1,0 +1,123 @@
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+
+<view class='container'>
+  <view class='newsimg'>
+    <image src='../../images/common/p13.png'></image>
+  </view>
+  <view class='newscon'>
+    <view class='newstitle'>热门吃鸡玩具大集合，采购首选集合，采 购首选。
+    </view>
+    <view class='font3042'>
+      <text>时间  2019-04-17</text>
+      <text>热度  2598人关注</text>
+    </view>
+    <view class='font2632'>近期热门游戏，吃鸡玩具大集合，您的采购首选。近期热门游戏，吃鸡玩具大集合，您的采购首选。</view>
+  </view>
+  <!-- 热门供应商 -->
+  <view class='hotsupplier'>
+    <view class='title'>热门供应商
+      <navigator class='more' url=''>更多</navigator>
+    </view>
+    <view class='supplierlist'>
+      <view class='col-con'>
+        <navigator class='pp-item' url='/web/index/index'>
+          <view class='pimg'>
+            <image src='../../images/common/p5.jpg'></image>
+          </view>
+          <view class='pname'>华达玩具</view>
+        </navigator>
+        <navigator class='pp-item' url='/web/index/index'>
+          <view class='pimg'>
+            <image src='../../images/common/p5.jpg'></image>
+          </view>
+          <view class='pname'>华达玩具</view>
+        </navigator>
+        <navigator class='pp-item' url='/web/index/index'>
+          <view class='pimg'>
+            <image src='../../images/common/p5.jpg'></image>
+          </view>
+          <view class='pname'>华达玩具</view>
+        </navigator>
+        <navigator class='pp-item' url='/web/index/index'>
+          <view class='pimg'>
+            <image src='../../images/common/p5.jpg'></image>
+          </view>
+          <view class='pname'>华达玩具</view>
+        </navigator>
+      </view>
+
+    </view>
+  </view>
+
+  <!-- 热销产品 -->
+  <view class='hotprolist'>
+    <view class='title'>热销产品
+      <navigator class='more' url='/pages/productlist/productlist'>更多</navigator>
+    </view>
+    <view class='prolist'>
+        <view class='pro' >
+        <navigator  url='/web/productdetail/productdetail'>
+          <view class='proimg'>
+            <image src='../../images/common/p2.jpg'></image>
+            <i class='play'>
+              <image src='../../images/pages/icn-03.png'></image>
+            </i>
+          </view>
+          </navigator>
+          <view class='pro-con'>
+            <span class='font2835'>我的我的世界展示盒...</span>
+            <span class='font2635'>NO.832-835</span>
+          </view>
+          <i class="addicon"></i>
+        </view>
+        <view class='pro' >
+        <navigator  url='/web/productdetail/productdetail'>
+          <view class='proimg'>
+            <image src='../../images/common/p2.jpg'></image>
+            <i class='play'>
+              <image src='../../images/pages/icn-03.png'></image>
+            </i>
+          </view>
+          </navigator>
+          <view class='pro-con'>
+            <span class='font2835'>我的我的世界展示盒...</span>
+            <span class='font2635'>NO.832-835</span>
+          </view>
+          <i class="addicon"></i>
+        </view>
+        <view class='pro' >
+        <navigator  url='/web/productdetail/productdetail'>
+          <view class='proimg'>
+            <image src='../../images/common/p2.jpg'></image>
+            <i class='play'>
+              <image src='../../images/pages/icn-03.png'></image>
+            </i>
+          </view>
+          </navigator>
+          <view class='pro-con'>
+            <span class='font2835'>我的我的世界展示盒...</span>
+            <span class='font2635'>NO.832-835</span>
+          </view>
+          <i class="addicon"></i>
+        </view>
+        <view class='pro'>
+        <navigator  url='/web/productdetail/productdetail'>
+          <view class='proimg'>
+            <image src='../../images/common/p2.jpg'></image>
+            <i class='play'>
+              <image src='../../images/pages/icn-03.png'></image>
+            </i>
+          </view>
+          </navigator>
+          <view class='pro-con'>
+            <span class='font2835'>我的我的世界展示盒我的我的世界展示盒...</span>
+            <span class='font2635'>NO.832-835</span>
+          </view>
+          <i class="addicon"></i>
+        </view>
+      </view>
+  </view>
+  <template is="footer" />
+</view>

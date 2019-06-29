@@ -1,0 +1,191 @@
+<!--pages/index/index.wxml-->
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+
+<view class='container'>
+    <!-- 搜索 -->
+    <view class="search {{isfixed ? 'topsearch' : ''}}">
+      <navigator class='searchcon' url='/pages/search/search'>
+        <image src='../../images/pages/icn-01.png'></image>小猪佩奇玩具
+      </navigator>
+    </view>
+    <!-- 轮播图 -->
+    <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="5000" duration="500" class='index-swiper'
+      indicator-color='#fff' indicator-active-color='#ff2832'>
+      <!-- <block wx:for="{{bannerlist}}" wx:key="Name" data-data="{{item}}"> -->
+      <swiper-item>
+        <image src="../../images/common/banner1.jpg" class="slide-image" />
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/common/banner1.jpg" class="slide-image" />
+      </swiper-item>
+      <!-- </block> -->
+    </swiper>
+    <!-- 首页导航 -->
+    <view class='ind-nav'>
+      <view class='ul'>
+        <navigator class='li' url='/supplier/index/index' open-type='redirect'>
+          <image src='../../images/pages/inav1.png'></image>
+          <view class='nav-name'>供应商</view>
+        </navigator>
+        <navigator class='li' url='/video/index/index' open-type='redirect'>
+          <image src='../../images/pages/inav2.png'></image>
+          <view class='nav-name'>短视频</view>
+        </navigator>
+        <navigator class='li' url='/news/index/index' open-type='redirect'>
+          <image src='../../images/pages/inav3.png'></image>
+          <view class='nav-name'>玩具头条</view>
+        </navigator>
+        <navigator class='li' url='/exhibition/index/index' open-type='redirect'>
+          <image src='../../images/pages/inav4.png'></image>
+          <view class='nav-name'>全球展会</view>
+        </navigator>
+        <navigator class='li' url='/market/index/index' open-type='redirect'>
+          <image src='../../images/pages/inav5.png'></image>
+          <view class='nav-name'>供求市场</view>
+        </navigator>
+      </view>
+    </view>
+    <!-- 广告位 -->
+    <view class='inn-ad'>
+      <view class='ad-con'>
+        <navigator url="">
+          <image class='adimg' src='../../images/common/gg.jpg'></image>
+        </navigator>
+        <image class='i' src='../../images/common/icn-02.png'></image>
+      </view>
+    </view>
+    <!-- 热门专题 显示2个-->
+    <view class='new-col'>
+      <view class='title'>热门专题
+        <navigator class='more' url='/pages/zhuanti/zhuanti'>更多</navigator>
+      </view>
+
+      <navigator class='list-li' url="/pages/zhuantidetail/zhuantidetail">
+        <view class='img'>
+          <image src='../../images/common/p1.jpg' mode='widthFix'></image>
+          <view class='new-mask'></view>
+        </view>
+        <view class='txt-con'>
+          <view class='font30b'>2019水货玩具大集合，开年进货必备。</view>
+          <view class='font26'>每年夏天玩具是一个非常热门的类别，采购商们不能...</view>
+        </view>
+      </navigator>
+
+      <navigator class='list-li' url="/pages/zhuantidetail/zhuantidetail">
+        <view class='img'>
+          <image src='../../images/common/p1.jpg' mode='widthFix'></image>
+          <view class='new-mask'></view>
+        </view>
+        <view class='txt-con'>
+          <view class='font30b'>2019水货玩具大集合，开年进货必备。</view>
+          <view class='font26'>每年夏天玩具是一个非常热门的类别，采购商们不能...</view>
+        </view>
+      </navigator>
+
+    </view>
+    <!-- 短视频  显示4个-->
+    <view class='new-col video-col'>
+      <view class='title'>短视频
+        <view class='more'>
+          <span class="font28">{{current}} </span>
+          <span class="font22"> / {{videoswipercount}}</span>
+        </view>
+      </view>
+      <view class='video-slider'>
+        <!-- 轮播图 -->
+        <swiper indicator-dots="{{true}}" autoplay="{{isautoplay}}" interval="5000" duration="500" class='video-swiper'
+          bindchange='videoSwiperChange'>
+          <block wx:for='{{vedio_data}}' wx:key=''>
+            <swiper-item>
+              <navigator  open-type="navigate" url='/video/detail/detail'>
+                
+                
+              <view class='video-item' >
+                <image src="../../images/common/p1.jpg" class="v-img" />
+                <view class='vmask'>
+                  <image src='../../images/common/video.png'></image>
+                </view>
+                <view class='vtitle'>
+                  <view class='font3054'>贝瓦儿歌 积木咖啡屋</view>
+                  <view class='font2654'>2018-12-15 18:00</view>
+                </view>
+              </view>
+              
+            </navigator>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+    <!-- 爆款推荐 显示6个-->
+    <view class='new-col'>
+      <view class='title'>爆款推荐
+        <navigator class='more' url='/pages/productlist/productlist'>更多</navigator>
+      </view>
+      <view class='prolist'>
+        <view class='pro'>
+          <navigator url='/web/productdetail/productdetail'>
+            <view class='proimg'>
+              <image src='../../images/common/p2.jpg'></image>
+              <i class='play'>
+                <image src='../../images/pages/icn-03.png'></image>
+              </i>
+            </view>
+          </navigator>
+          <view class='pro-con'>
+            <span class='font2835'>我的我的世界展示盒...</span>
+            <span class='font2635'>NO.832-835</span>
+          </view>
+          <i class="addicon"></i>
+        </view>
+        <view class='pro'>
+          <navigator url='/web/productdetail/productdetail'>
+            <view class='proimg'>
+              <image src='../../images/common/p2.jpg'></image>
+              <i class='play'>
+                <image src='../../images/pages/icn-03.png'></image>
+              </i>
+            </view>
+          </navigator>
+          <view class='pro-con'>
+            <span class='font2835'>我的我的世界展示盒...</span>
+            <span class='font2635'>NO.832-835</span>
+          </view>
+          <i class="addicon"></i>
+        </view>
+        <view class='pro'>
+          <navigator url='/web/productdetail/productdetail'>
+            <view class='proimg'>
+              <image src='../../images/common/p2.jpg'></image>
+              <i class='play'>
+                <image src='../../images/pages/icn-03.png'></image>
+              </i>
+            </view>
+          </navigator>
+          <view class='pro-con'>
+            <span class='font2835'>我的我的世界展示盒...</span>
+            <span class='font2635'>NO.832-835</span>
+          </view>
+          <i class="addicon"></i>
+        </view>
+        <view class='pro'>
+          <navigator url='/web/productdetail/productdetail'>
+            <view class='proimg'>
+              <image src='../../images/common/p2.jpg'></image>
+              <i class='play'>
+                <image src='../../images/pages/icn-03.png'></image>
+              </i>
+            </view>
+          </navigator>
+          <view class='pro-con'>
+            <span class='font2835'>我的我的世界展示盒我的我的世界展示盒...</span>
+            <span class='font2635'>NO.832-835</span>
+          </view>
+          <i class="addicon"></i>
+        </view>
+      </view>
+    </view>
+    <template is="footer" />
+</view>

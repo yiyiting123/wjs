@@ -1,0 +1,53 @@
+/* exhibition/index/index.wxss */
+.title{width:100%;height: 100rpx;line-height: 100rpx;font-size: 34rpx;color: #000;font-weight: bold;}
+.new-col{width: 690rpx;height: auto;padding: 0 30rpx;background: #fff;}
+.more{float: right;font-size: 26rpx;font-weight: 300;color: #999;}
+/* 近期展会推荐 */
+.zhanhui-col{width:750rpx;height: auto;padding: 0 0;}
+.zhanhui-col .title{width:690rpx;height: 100rpx;line-height: 100rpx;font-size: 34rpx;color: #000;font-weight: bold;margin: 0 30rpx;}
+.zhanhui-slider{width:100%;height: 368rpx;}
+.zhanhui-slider .zhanhui-swiper{width:100%;height: 100%;}
+.zhanhui-slider .zhanhui-swiper swiper-item{display: flex;justify-content: center;}
+.zhanhui-item{width:690rpx;height: 100%;position: relative;border-radius: 10rpx;overflow: hidden;}
+.zhanhui-item .v-img{width:100%;height: 100%;position: absolute;z-index: 1;left: 0;top: 0;border-radius: 10rpx;overflow: hidden;}
+.zhanhui-item .vicn{width:27rpx;height: 16rpx;position: absolute;z-index: 3;right: 0;bottom: 0;}
+.more .font28{font-size: 28rpx;color: #000;}
+.more .font22{font-size: 22rpx;color: #737373;}
+
+
+/* 展会 */
+.fontred{color:#ff2832;}
+.n-item{width:100%;height: auto;display: flex;justify-content: space-between;margin-top: 20rpx;margin-bottom: 20rpx;}
+.n-item .nimg{width:120rpx;height: 120rpx;border-radius: 10rpx;border: 1px solid #e6e6e6;overflow: hidden;box-sizing: border-box;}
+.n-item .nimg image{width:100%;height: 100%;}
+.n-item .nright{width:550rpx;}
+.n-item .nright .font30{width:100%;height: 42rpx;line-height: 42rpx;font-size: 30rpx;color: #000;font-weight: 600;overflow: hidden;text-overflow: ellipsis;}
+.n-item .nright .font26{width:100%;height: 39rpx;line-height: 39rpx;font-size: 26rpx;color: #999999;overflow: hidden;text-overflow: ellipsis;}
+
+.btnmore{width:100%;height: auto;text-align: center;margin-top:10rpx;display: flex;justify-content: center;margin-bottom: 40rpx;float: left;}
+.btnmore .more{display: inline-block;width: 200rpx;height: 50rpx;border-radius: 50rpx;border:1px solid #e6e6e6;font-size: 26rpx;text-align: center;line-height: 50rpx;}
+
+/* 广告横条 */
+.adcol{width:100%;height: 130rpx;overflow: hidden;}
+.adcol .adcol-con{width:auto;height: 130rpx;overflow-x: scroll;white-space: nowrap;overflow-y: hidden;}
+.adcol .adcol-con .adnav{width:680rpx;height: 130rpx;overflow: hidden;border-radius: 10rpx;position: relative;margin-right: 20rpx;display: inline-block;padding: 0;}
+.adcol .adcol-con .adnav .adimg{width:100%;height: 100%;}
+.adcol .adcol-con .adnav .i{width:27rpx;height: 16rpx;position: absolute;z-index: 3;right: 0;bottom: 0;}
+.adcol .adcol-con .adnav:first-child{margin-left: 30rpx;}
+.adcol .adcol-con .adnav:last-child{margin-right: 30rpx;}
+
+/* 新闻 */
+.nli{width: 100%;height: 180rpx;margin-bottom: 30rpx;}
+.nli .nli-left{width:240rpx;height: 180rpx;border-radius: 6rpx;position: relative;overflow: hidden;float: left;}
+.nli .nli-left image{width:100%;height: 100%;}
+
+
+.nli .nli-right{width:425rpx;height: auto;float: right;}
+.nli .nli-right .nli-name{width:100%;height: 84rpx;line-height: 42rpx;font-size: 30rpx;color: #000;font-weight: bold;overflow: hidden;text-overflow: ellipsis;}
+.nli .nli-right .nli-hot{width:100%;height: 76rpx;line-height: 38rpx;font-size: 26rpx;color: #999;margin-top: 20rpx;}
+
+
+/* 按地区找展会 */
+.col-con .nomar{margin-right: 0;}
+.areacol .col-con{border-bottom: none;padding-bottom: 0;}
+.s-item{width:216rpx;height: 80rpx;border-radius: 10rpx;background: #f3f5f6;overflow: hidden;text-align: center;line-height: 80rpx;font-size: 28rpx;display: inline-block;margin-right: 21rpx;margin-bottom: 20rpx;float: left;}

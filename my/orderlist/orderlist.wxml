@@ -1,0 +1,61 @@
+<!--my/orderlist/orderlist.wxml-->
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+
+<view class='container'>
+  <!-- 切换 -->
+  <view class='search-nav'>
+    <view class='sea-li sea-current'>全部</view>
+    <view class='sea-li'>待询单</view>
+    <view class='sea-li'>已完成</view>
+  </view>
+  <view class='orderlist'>
+    <view class='order'>
+
+      <view class='o-top'>
+        <view class='o-left'>陆之宝玩具</view>
+        <text class='o-lab'>待询单</text>
+      </view>
+      <view class='o-pros'>
+        <navigator class='proimg'>
+          <image src='../../images/common/p2.jpg'></image>
+        </navigator>
+        <navigator class='proimg'>
+          <image src='../../images/common/p2.jpg'></image>
+        </navigator>
+        <navigator class='proimg'>
+          <image src='../../images/common/p2.jpg'></image>
+        </navigator>
+        <navigator class='promore'></navigator>
+      </view>
+      <view class='o-bott'>
+        <text class='font26'>2019-06-28 15:22</text>
+        <view class='btnDel'>删除订单</view>
+      </view>
+    </view>
+
+    <view class='order'>
+
+      <view class='o-top'>
+        <view class='o-left'>陆之宝玩具</view>
+        <text class='o-lab'>待询单</text>
+      </view>
+      <view class='o-pros'>
+        <navigator class='proimg'>
+          <image src='../../images/common/p2.jpg'></image>
+        </navigator>
+        <navigator class='proimg'>
+          <image src='../../images/common/p2.jpg'></image>
+        </navigator>
+        <navigator class='promore'></navigator>
+      </view>
+      <view class='o-bott'>
+        <text class='font26'>2019-06-28 15:22</text>
+        <view class='btnDel'>删除订单</view>
+      </view>
+    </view>
+
+  </view>
+  <template is="footer" />
+</view>

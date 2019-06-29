@@ -1,0 +1,48 @@
+<!--my/login/login.wxml-->
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+
+<view class='container'>
+
+  <view class='toplogo'>
+    <image src='../../images/my/toysol.png'></image>
+  </view>
+  <view class='tologin'>
+    <view class='font40'>登录
+      <text style='font-size:30rpx'>/</text> 注册</view>
+    <image src='../../images/my/icn-03.png'></image>
+  </view>
+  <view class='font26'>登录、注册后您会享受更多福利</view>
+
+  <!-- announcement 公告 -->
+  <view class='ann'>
+    <view class='left'>关于向企业用户开放账号冻结/激活...</view>
+    <navigator class='more'>更多 </navigator>
+  </view>
+
+  <!-- my_nav -->
+  <view class='my_nav'>
+  <navigator class='nav_li'>
+  <image src='../../images/my/1.png'></image>
+  <view class='font24'>关于我们</view>
+  </navigator>
+  <navigator class='nav_li'>
+  <image src='../../images/my/2.png'></image>
+  <view class='font24'>联系我们</view>
+  </navigator>
+  <navigator class='nav_li'>
+  <image src='../../images/my/3.png'></image>
+  <view class='font24'>用户协议</view>
+  </navigator>
+  <navigator class='nav_li'>
+  <image src='../../images/my/4.png'></image>
+  <view class='font24'>隐私声明</view>
+  </navigator>
+  <navigator class='nav_li'>
+  <image src='../../images/my/5.png'></image>
+  <view class='font24'>法律声明</view>
+  </navigator>
+  </view>
+  <template is="footer" />
+</view>

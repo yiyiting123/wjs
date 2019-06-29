@@ -1,0 +1,72 @@
+<!-- 底部菜单栏 -->
+<template name="tabBar">
+  <view class="tabBar">
+    <block wx:for="{{tabBar}}" wx:for-item="item" wx:key="tabBar">
+      <!-- <view class="tabBar-item" wx:if='{{item.current== 1}}'>
+        <view>
+          <view>
+            <image class="icon" src='{{item.iconPath}}'></image>
+          </view>
+          <view class="{{item.current== 1 ? 'tabBartext' :''}}">{{item.text}}</view>
+        </view>
+      </view> -->
+      <view class="tabBar-item" >
+        <navigator class='tabBar-navigator' open-type="reLaunch" url="{{item.pagePath}}">
+        <view class='icn' wx:if='{{item.number>0}}'>{{item.number}}</view>
+          <view>
+            <image class="icon2" src='{{item.iconPath}}'></image>
+          </view>
+          <view class="{{item.current== 1 ? 'tabBartext' :''}}">{{item.text}}</view>
+        </navigator>
+      </view>
+    </block>
+  </view>
+</template>
+
+<template name='footer'>
+  <view class='footer'><text class="txtcon">玩具说:为了无法计算的价值</text></view>
+</template>
+
+
+<!-- 进货单 -->
+
+<template name="btnCart">
+<!-- <movable-area style="pointer-events: none;height: 100%;width: 100%;position:absolute;left:0px;top:10%;z-index:10000;">
+  	<movable-view direction="all" style="pointer-events: auto; " out-of-bounds="{{false}}" x="0" y="500"  inertia="{{true}}" class='btnCart'>
+    <navigator> 
+    <view class='txt'>进货单<view class='icn' wx:if="{{cartNum>0}}">{{cartNum}}</view></view>
+    </navigator>
+	</movable-view>
+</movable-area> -->
+
+  	<view class='btnCart'>
+    <navigator> 
+    <view class='txt'>进货单<view class='icn' wx:if="{{cartNum>0}}">{{cartNum}}</view></view>
+    </navigator>
+	</view>
+
+
+
+
+</template>
+
+
+
+<!-- 状态栏 -->
+<template name="statusBar">
+<!-- 状态栏 -->
+<view style='height: {{statusBarHeight}}px;position: fixed;top: 0;left:0;z-index:9999;' class='navBar'></view> 
+<!-- 标题栏 -->
+<view style='height: 44px;position: fixed;top:{{statusBarHeight}}px;left:0;z-index:9999;' class='statusBar'><navigator class='logo' open-type="reLaunch"  url='/pages/index/index'><image src='../../images/web/toysollogo.png'></image></navigator> <view class='statusBarTitle'>{{statusBarTitle}}</view></view>
+
+</template>
+
+
+<!-- 状态栏，带返回按钮 -->
+<template name="statusBarreturn">
+<!-- 状态栏 -->
+<view style='height: {{statusBarHeight}}px;position: fixed;top: 0;left:0;z-index:9999;' class='navBar'></view> 
+<!-- 标题栏 -->
+<view style='height: 44px;position: fixed;top:{{statusBarHeight}}px;left:0;z-index:9999;' class='statusBar'><navigator class='return' open-type="navigateBack"><image src='../../images/web/return.png'></image></navigator> <view class='statusBarTitle'>{{statusBarTitle}}</view></view>
+
+</template>

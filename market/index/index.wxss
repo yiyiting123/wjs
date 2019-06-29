@@ -1,0 +1,36 @@
+/* market/index/index.wxss */
+.container{padding: 15rpx 30rpx 0 30rpx;width:690rpx;}
+/* 切换 */
+.search-nav{width:100%;height: 65rpx;margin-bottom: 30rpx;}
+.search-nav .sea-li{margin-right: 40rpx;float: left;font-size: 30rpx;color: #85898d;line-height: 60rpx;position: relative;}
+.search-nav .sea-current{font-size: 34rpx;color: #000;font-weight: bold;}
+.search-nav .sea-current::after{position: absolute;bottom: -4rpx;content: "";width: 30rpx;height: 4rpx;border-radius: 4rpx;background: #ff2832;right: 50%;transform: translateX(15rpx);}
+
+/* market-list */
+.market-list{width: 100%;height: auto;}
+.market-li{width: 100%;height: auto;padding: 30rpx 20rpx;box-sizing: border-box;background: #f3f5f6;border-radius: 10rpx;margin-bottom: 20rpx;}
+.market-li .li-top{width: 100%;display: flex;align-items: center;min-height: 80rpx;justify-content:space-between;}
+.market-li .li-top .li-logo{width:80rpx;height: 80rpx;border-radius: 80rpx;overflow: hidden;}
+.market-li .li-top .li-logo image{width:100%;height: 100%;}
+.market-li .li-right{width:555rpx;height: auto;padding: 5rpx 0;box-sizing: border-box;}
+.market-li .li-right .m-name{display: block;width: 100%;font-size: 28rpx;color: #000;line-height: 35rpx;}
+.market-li .li-right .m-time{display: block;width: 100%;font-size: 22rpx;color: #999;line-height: 35rpx;}
+/* 供应商 */
+.supply{  background: -webkit-linear-gradient(left top, #fbcb72 , #fac56c); 
+  background: -o-linear-gradient(bottom right, #fbcb72, #fac56c); 
+  background: -moz-linear-gradient(bottom right, #fbcb72, #fac56c);
+  background: linear-gradient(to bottom right, #fbcb72 , #fac56c);
+  box-shadow: 0 0 10rpx 2rpx rgba(249,200,114,0.45);padding: 0 6rpx;line-height: 34rpx;display: inline-block;color: #fff;text-align: center;font-size: 22rpx;border-radius: 5rpx;margin-left: 10rpx;}
+/* 求购 */
+.buying{  background: -webkit-linear-gradient(left top, #fba076 , #ff8250); 
+  background: -o-linear-gradient(bottom right, #fba076, #ff8250); 
+  background: -moz-linear-gradient(bottom right, #fba076, #ff8250);
+  background: linear-gradient(to bottom right, #fba076 , #ff8250);
+  box-shadow: 0 0 10rpx 2rpx rgba(254,138,90,0.45);padding: 0 6rpx;line-height: 34rpx;display: inline-block;color: #fff;text-align: center;font-size: 22rpx;border-radius: 5rpx;margin-left: 10rpx;}
+
+.market-li .li-butt{width: 550rpx;height: auto;margin-left: 95rpx;font-size: 30rpx;line-height: 40rpx;color: #000;font-weight: bold;}
+
+
+/* 加号按钮 */
+.btnadd{width:100rpx;height: 100rpx;background: rgba(0,0,0,0.8);border-radius: 100rpx;display: flex;z-index: 9;right: 20rpx;bottom: 200rpx;align-items: center;justify-content: center;position: fixed;}
+.btnadd .icnadd{width:65rpx;height: 65rpx;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABBCAYAAACO98lFAAABVElEQVR4nO3aUUrDQBSF4b8qbkaXI6nbka5G3U6LQldSjY6Mdx4C4+RtMsI5P6SF+5LO9xAKN6SURl1TSumYUrqU72nUb9nljwE9AK9/3HYPvFTTzo1COAJ31RROwH017dwohBm4rqbwBdxU086NQli76a6adO5q6xv+x+QRMEIkj4ARInkEjBDJI2CESB4BI0TyCBghkkfACJE8AkaI5BEwQiSPgBEieQSMEMkjsECYympsLouR3tdaW9x/LufN5/7dQLWWoyrt8xqutRxV6ZQRLsCtMMJHfiacq7FW54zwJI5wyAj5ofgIvJX3AxT6LufN536Wfz8B/1mK5BEwQiSPgBEieQSMEMkjYIRIHgEjRPIIGCGSR8AIkTwCRojkETBCJI+AESJ5BIwQySMwEKG16WrNuzYK4b2arM+7NgqhtQQ+VJMNGoWwXAJ/Lpejm/8S4Ae/czL5kDtFuQAAAABJRU5ErkJggg==);background-size: contain;background-repeat: no-repeat;background-position: center; }

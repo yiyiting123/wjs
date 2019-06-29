@@ -1,0 +1,27 @@
+.container2{padding:0 30rpx;width:690rpx;}
+/* 搜索 */
+.search{width: 750rpx;height: 74rpx;padding: 0 30rpx 10rpx 30rpx;background: #f3f5f6;box-sizing: border-box;}
+.searchcon{width:630rpx;height: 64rpx;background: #fff;padding:0 30rpx;border-radius: 64rpx;font-size: 28rpx;color: #9e9e9e;display: flex;align-items: center;margin-bottom: 10rpx;justify-content: center;}
+.searchcon image{width:32rpx;height: 32rpx;margin-right: 10rpx;position: relative;top: 5rpx;}
+
+
+.vnav{width:690rpx;height: 100rpx;font-size: 26rpx;line-height: 100rpx;color: #999;text-align: right;padding: 0 30rpx;}
+.vnav .font34{font-size: 34rpx;color: #000;font-weight: bold;float:left;}
+.vnav .btn{margin-left: 20rpx;}
+.vnav .btnselect{color: #000;}
+
+/* 供应商 */
+.supplierlist{width:100%;height: auto;}
+.supplierlist .supli{width:100%;height: auto;background: #f3f5f6;padding: 30rpx 30rpx 0 30rpx;box-sizing: border-box;margin-bottom: 20rpx;}
+.supli .top{width:100%;height: auto;display: flex;justify-content: space-between;border-bottom: 1px solid #e6e6e6;padding-bottom: 10rpx;}
+.supli .top .comlogo{width:120rpx;height: 120rpx;border-radius: 10rpx;box-sizing: border-box;border: 1px solid #e6e6e6;overflow: hidden;}
+.supli .top .comlogo image{width: 100%;height: 100%;}
+.supli .right{width:540rpx;height: auto;}
+.supli .right .comname{width:100%;height:36rpx;font-size: 30rpx;color: #000;line-height: 36rpx;overflow: hidden;text-overflow: ellipsis; }
+.supli .right .icntoysol{font-size:26rpx;color: #ff2832;background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAgCAYAAAB+ZAqzAAAC3UlEQVRYhc3XX4gVZRjH8c85aoi71IUQgdFNigsSwbJ0V4Qg7EUXoUuyomSU0kWFSLZU5J8NughKUisSFRQUi43oIpHwKjEh1ItoiwVJFjaMRMSgXXRdjxfPjI5z5uyes5s7+4OBmed9532+8z7PPPNMpdbRqUAvYidWYH7RhP9BtzCEfnyTHyxyugoDmPeAgLK+V+A4xvFddrCam7wQX84CVFYV7EF71pgHexdPzhZRRo9je9ZQyeTYMvwqdq0MjaMTv3H/ju1RHhQswOcitHfB1qC7LKKMnsMGIpTt+EPEeS7oHyyv4n1zBwoeRX+l1tE5giVl0+R0vYrrZVMU6L8qPiqbokD9VRzF/rJJMjqKr9Jy8RbOlwiTahCbuVfHbohadrUsIpHrazDK/ZV/GOtxu8GNNezCK/izBYeX8Rrew8Qka78q2iDUtz0n8SF2FNx8QvRo8EtytE0BNYYXcCG57sLqgnmf4tusId9dSMBOFtifwsPJ+e/iCafSGxmoRckaef2EvryxCGxChHQ4Z38CByUfWXwtPvyNdCg5Un0hOpisLmOtghAXgREvQQ9u5uw92JK53oafC+6/IHYr1Wa8nJtzK4H6uwigERicw5sF9o/xbHJ+Ey+JD2+qa+IBxpLrLuwtWKcPpxs5nwyMKLyHc7b5IoyPJdd/oVeEoybalkvJ2GLx//BQbo0B7J7McaXBX1JWi0S4ns7ZT2OlCAmxA23utchV/KC+zxvCM/h3pmCwVIT2kZz9E7ydrpXApIm8U33ZGU2gBqdyOFUoU10UyVvL2beKfJKMpVDd+KBgnU3NQLUCBt+LxM+qInLwdVHj2rFR/MDm196HY806azaUqebhR5FbregsnldffhqqlR0jQtUr3sRmdUWUlKahaB2MqFlrm3Q0gXUYadXJdMDgDN5pYt4OnJqOg+mCwWc4MMn4ETNo22cCRrz+G0SHMJocZ0TnsVF9eWladwDKdZNIX22F/wAAAABJRU5ErkJggg==);background-repeat: no-repeat;background-size: 30rpx 26rpx;background-position: left center;padding-left: 40rpx;}
+.supli .right .comzhuyin{width:100%;height: 60rpx;font-size: 22rpx;line-height: 30rpx;color: #999;overflow: hidden;text-overflow: ellipsis;}
+
+.supli .pros{width:100%;height: auto;padding: 20rpx 0;}
+.supli .pros .proli{width:165rpx;height: 128rpx;border-radius: 10rpx;overflow: hidden;box-sizing: border-box;border: 1px solid #9e9e9e;margin-right: 10rpx;display: inline-block;}
+.supli .pros .proli image{width:100%;height: 100%;}
+.supli .pros .proli:last-child{margin-right: 0;}

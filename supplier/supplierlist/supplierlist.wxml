@@ -1,0 +1,79 @@
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<view class='container'>
+  <!-- 搜索 -->
+  <view class="search">
+    <navigator class='searchcon' url='/pages/search/search' open-type='redirect'>
+      <image src='../../images/pages/icn-01.png'></image>小猪佩奇玩具</navigator>
+  </view>
+  <view class='vnav'>
+    <view class='font34'>搜索“{{KW}}”结果 </view>
+    <text class="btn {{current==0?'btnselect':''}} ">按热度</text>
+    <text class="btn {{current==1?'btnselect':''}} ">按时间</text>
+  </view>
+
+  <!-- 搜索供应商页面 -->
+  <view class='supplierlist'>
+    <view class='supli'>
+      <navigator url='/web/index/index'>
+        <view class='top'>
+          <view class='comlogo'>
+            <image src='../../images/common/p5.jpg'></image>
+          </view>
+          <view class='right'>
+            <view class='comname'>汕头市恒泰科技有限公司</view>
+            <view>
+              <text class='icntoysol'>玩具说VIP第4年</text>
+            </view>
+            <view class='comzhuyin'>主营产品：电动童车 滑行车 沙滩玩具 遥控船 坐便器 轨道车 小颗粒积木</view>
+          </view>
+        </view>
+      </navigator>
+      <view class='pros'>
+        <navigator class='proli' url='/web/productdetail/productdetail'>
+          <image src='../../images/common/p3.jpg'></image>
+        </navigator>
+        <navigator class='proli' url='/web/productdetail/productdetail'>
+          <image src='../../images/common/p3.jpg'></image>
+        </navigator>
+        <navigator class='proli' url='/web/productdetail/productdetail'>
+          <image src='../../images/common/p3.jpg'></image>
+        </navigator>
+        <navigator class='proli' url='/web/productdetail/productdetail'>
+          <image src='../../images/common/p3.jpg'></image>
+        </navigator>
+      </view>
+    </view>
+    <view class='supli'>
+      <navigator url='/web/index/index'>
+        <view class='top'>
+          <view class='comlogo'>
+            <image src='../../images/common/p5.jpg'></image>
+          </view>
+          <view class='right'>
+            <view class='comname'>汕头市恒泰科技有限公司</view>
+            <view>
+              <text class='icntoysol'>玩具说VIP第4年</text>
+            </view>
+            <view class='comzhuyin'>主营产品：电动童车 滑行车 沙滩玩具 遥控船 坐便器 轨道车 小颗粒积木</view>
+          </view>
+        </view>
+      </navigator>
+      <view class='pros'>
+        <navigator class='proli' url='/web/productdetail/productdetail'>
+          <image src='../../images/common/p3.jpg'></image>
+        </navigator>
+        <navigator class='proli' url='/web/productdetail/productdetail'>
+          <image src='../../images/common/p3.jpg'></image>
+        </navigator>
+        <navigator class='proli' url='/web/productdetail/productdetail'>
+          <image src='../../images/common/p3.jpg'></image>
+        </navigator>
+      </view>
+    </view>
+
+  </view>
+
+  <template is="footer" />
+</view>

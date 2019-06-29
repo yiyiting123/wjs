@@ -1,0 +1,82 @@
+<!--market/publish/publish.wxml-->
+<import src="../../common/template.wxml" />
+<import src="../../we-cropper/we-cropper.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<view class='container' wx:if="{{!flag}}">
+  <!-- 广告位 -->
+  <view class='inn-ad'>
+    <view class='ad-con'>
+      <navigator url="">
+        <image class='adimg' src='../../images/common/gg.jpg'></image>
+      </navigator>
+      <image class='i' src='../../images/common/icn-02.png'></image>
+    </view>
+  </view>
+  <view class="tab-li">
+    <view class="th">选择</view>
+    <view class="tb">
+      <view class="radio checked">我要求购</view>
+      <view class="radio">我要供应</view>
+    </view>
+  </view>
+  <view class="tab-li">
+    <view class="th">标题</view>
+    <view class="tb">
+      <input placeholder='请输入求购信息标题'></input>
+    </view>
+  </view>
+  <view class="tab-li">
+    <view class="th">内容</view>
+    <view class="tb">
+      <textarea placeholder='请详细描述您的求购信息'></textarea>
+    </view>
+  </view>
+  <view class="tab-li thimg">
+    <view class="th ">图片</view>
+    <view class="tb">
+      <view class='enterimg'>
+        <block wx:for='{{pics}}' wx:key="Name" data="{{item}}">
+          <view class='add'>
+            <image class='add_img fl' src="{{item}}" bindtap='getImageShow' data-index='{{index}}'></image>
+            <view class='add_close fl'>
+              <image class='close fl' src='../../images/market/icon_close2.png' bindtap='delpic' data-index='{{index}}'></image>
+            </view>
+          </view>
+        </block>
+        <view class='add' wx:if="{{pics.length<4}}" bindtap='upEwm'>
+          <image class='add_img fl' src='../../images/market/publish1.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='btn_post' bindtap='btnPost'>提交信息</view>
+  <!-- 点击同意添加checked -->
+  <view class='agree'><view class='radio checked'>同意我们的<navigator class='navigator'>《服务条款》</navigator> 与 <navigator class='navigator'>《隐私声明》</navigator> </view></view>
+  <template is="footer" />
+</view>
+
+<view class="cropper-wrapper" wx:if="{{flag}}">
+  <template is="we-cropper" data="{{...cropperOpt}}" />
+  <view class="cropper-buttons" style="color: #04b00f">
+    <view class="upload" bindtap="uploadTap">
+      上传图片
+    </view>
+    <view class="getCropperImage" bindtap="getCropperImage">
+      生成图片
+    </view>
+  </view>
+</view>
+
+
+<!-- 发布成功 -->
+<view class='mask' wx:if="{{ly_flag}}">
+<view class='ly_mask'>
+<view class='smile'><image src='../../images/market/smile.png'></image> </view>
+<view class='font30'>您的信息发布成功！</view>
+<view class='font30'>我们工作人员会第一时间对信息进行审核。</view>
+<view class='font30'>祝您生活愉快，家庭幸福！</view>
+<view class='btn_ok' bindtap='btnOK'>确定</view>
+</view>
+</view>

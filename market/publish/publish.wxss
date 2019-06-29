@@ -1,0 +1,85 @@
+/* market/publish/publish.wxss */
+.container{width: 690rpx;height: auto;margin:30rpx;}
+/* 广告条 */
+.inn-ad{width:690rpx;height: auto; display: flex;justify-content: center;background: #fff;}
+.inn-ad .ad-con{width: 690rpx;height: 120rpx;border-radius: 10rpx; position: relative;box-shadow: 0 0 10rpx rgba(0,0,0,0.3);overflow: hidden;}
+.inn-ad .ad-con .adimg{width:690rpx;height: 120rpx;border-radius: 10rpx;}
+.inn-ad .ad-con .i{width: 27rpx;height: 16rpx;position: absolute;right: 0;bottom: 0;border-radius: 5rpx 0 0 0;}
+
+/* tab-li */
+.tab-li{width:100%;height: auto;padding: 40rpx 0;border-bottom: 1px solid #e6e6e6;}
+.tab-li .th{width:85rpx;height: auto;font-size: 34rpx;color: #c8c8c8;font-weight: bold;line-height: 60rpx;float: left;}
+.tab-li .tb{width:605rpx;height: auto;font-size: 30rpx;color: #c8c8c8;line-height: 60rpx;float: right;}
+.tab-li .tb .radio{display: inline-flex;margin-right: 10rpx;align-items: center;}
+.tab-li .tb .radio::before{content: '';width: 18rpx;height: 18rpx;background: #c8c8c8;border-radius: 18rpx;margin: 0 10rpx;display: inline-block;}
+.tab-li .tb .checked{color: #ff2832;font-weight: bold;}
+.tab-li .tb .checked::before{background: #ff2832;}
+
+.tab-li .tb input{width:100%;line-height: 60rpx;font-size: 30rpx;display: flex;align-items: center;height: 60rpx;color: #000;}
+.tab-li .tb textarea{width:100%;line-height: 60rpx;font-size: 30rpx;height:325rpx;color: #000;box-sizing: border-box;}
+
+.thimg{display: flex;align-items: center;}
+.enterimg{width:100%;height: auto;display: flex;margin-right: 23rpx;}
+.enterimg:last-child{margin-right: 0;}
+.enterimg .add{width:134rpx;height: 134rpx;border-radius: 10rpx;background: #f3f5f6;position: relative;margin-right: 15rpx;overflow: hidden;}
+.enterimg .add:last-child{margin-right: 0;}
+.enterimg .add image{width:134rpx;height: 134rpx;}
+
+.cropper-wrapper{
+   
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #e5e5e5;
+}
+
+.cropper-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    bottom: 100rpx;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    z-index: 9;
+}
+
+.cropper-buttons .upload, .cropper-buttons .getCropperImage{
+    width: 50%;
+    text-align: center;
+}
+.cropper{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cropper-buttons{
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.enterimg .add_close{width:40rpx;height: 40rpx;border-radius: 50%;background-color: rgba(0, 0, 0, 0.4);z-index: 999;border:1rpx solid #fff;position: absolute;top: 8rpx;right: 8rpx;}
+.enterimg .add_close .close{width:40rpx;height: 40rpx;}
+
+.btn_post{width:100%;height: 90rpx;background: #ff2832;color: #fff;font-weight: bold;text-align: center;font-size: 30rpx;line-height: 90rpx;border-radius: 10rpx;margin-top: 40rpx;}
+.agree{width:100%;height: auto;margin: 35rpx 0 30rpx 0;text-align: center;font-size: 26rpx;line-height: 54rpx;color: #c8c8c8;}
+.agree .radio{display: inline-flex;align-items: center;}
+.agree .radio::before{content: '';width: 18rpx;height: 18rpx;background: #c8c8c8;border-radius: 18rpx;margin: 0 10rpx;display: inline-block;}
+.agree .checked{color: #999;font-weight: bold;}
+.agree .checked::before{background: #ff2832;}
+.agree .radio .navigator{display: inline-block;color: #0f73a5;}
+
+
+/* 发布成功 */
+.mask{width:100%;height: 100%;position: fixed;top: 0;left: 0; z-index: 9;background: rgba(0, 0, 0, 0.8);display: flex;align-items: center;justify-content: center;}
+.ly_mask{width:690rpx;height: 500rpx;background: #fff;border-radius: 10rpx;padding: 35rpx;box-sizing: border-box;text-align: center;}
+.ly_mask .smile{width:165rpx;height: 165rpx;display: inline-block;margin: 5rpx 0 20rpx 0;}
+.ly_mask .smile image{width:100%;height: 100%;}
+.ly_mask .font30{font-size: 30rpx;color: #000;line-height: 50rpx;}
+.ly_mask .btn_ok{width:200rpx;height: 60rpx;background: #ff2832;line-height: 60rpx;text-align: center;display: inline-block;border-radius: 5rpx;font-size: 30rpx;color: #fff;margin-top: 30rpx;}

@@ -1,0 +1,49 @@
+<!--news/index/index.wxml-->
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<view class='container'>
+  <!-- 切换 -->
+  <view class='search-nav'>
+    <view class='sea-li sea-current'>推荐</view>
+    <view class='sea-li'>行业</view>
+    <view class='sea-li'>展会</view>
+  </view>
+
+  <!-- 新闻列表 -->
+  <view class='newslist'>
+
+
+    <view class='nli'>
+      <navigator url='/news/detail/detail'>
+        <view class='nli-left'>
+          <image src='../../images/common/p8.jpg'></image>
+
+        </view>
+        <view class='nli-right'>
+          <view class='nli-name'>迪士尼砸钱拉开战事，跨界PK奈飞苹果亚马逊</view>
+          <view class='nli-hot'>
+            <text space='nbsp'>时间:2019-04-16   热度:2541</text>
+            <view>来源:成都游博会</view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+    <view class='nli'>
+      <navigator url='/news/detail/detail'>
+        <view class='nli-left'>
+          <image src='../../images/common/p8.jpg'></image>
+
+        </view>
+        <view class='nli-right'>
+          <view class='nli-name'>迪士尼砸钱拉开战事，跨界PK奈飞苹果亚马逊</view>
+          <view class='nli-hot'>
+            <text space='nbsp'>时间:2019-04-16   热度:2541</text>
+            <view>来源:成都游博会</view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <template is="footer" />
+</view>

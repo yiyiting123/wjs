@@ -1,0 +1,31 @@
+/**分类栏**/
+.classify{width:100%;}
+.left-navbar{
+  left:0;
+  width:32%;
+  height:calc(100% - 100rpx);
+  background-color:#f9fafb;
+  font-size:30rpx;
+  color: #999;
+  position: fixed; 
+}
+.left-navbar view{
+  height:100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 0 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.left-navbar view:last-child{  margin-bottom: 300rpx;}
+.active{
+  color:#000;
+  font-size:30rpx;
+}
+#right{
+  float: right;
+  width:68%;
+  height:calc(100% - 100rpx);
+}
+.cateli{min-width: 50%;height: auto;min-height: 100rpx;font-size: 30rpx;line-height: 100rpx;color: #000;float: left;padding-left: 20rpx;box-sizing: border-box;}

@@ -1,0 +1,19 @@
+<!--supplier/category/category.wxml-->
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<view class='container'>
+<!-- 按类别找供应商 -->
+  <view class='new-col areacol'>
+    <view class='title'>按类别找供应商（按地区找供应商）
+    </view>
+    <view class='col-con'>
+      <navigator class='s-item' url='/supplier/supplierlist/supplierlist'>遥控玩具(208)</navigator>
+      <navigator class='s-item' url='/supplier/supplierlist/supplierlist'>电动玩具(350)</navigator>
+      <navigator class='s-item nomar' url='/supplier/supplierlist/supplierlist'>电动玩具(350)</navigator>
+      <navigator class='s-item' url='/supplier/supplierlist/supplierlist'>电动玩具(350)</navigator>
+      <navigator class='s-item' url='/supplier/supplierlist/supplierlist'>电动玩具(350)</navigator>
+    </view>
+  </view>
+    <template is="footer" />
+</view>

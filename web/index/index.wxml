@@ -1,0 +1,202 @@
+<!--web/index/index.wxml-->
+<import src="../common/template.wxml" />
+<!-- 状态栏 -->
+<template is="statusBar" data="{{statusBarHeight,statusBarTitle}}"/>
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<!-- 进货单 -->
+<template is="btnCart" data="{{cartNum}}"/>
+<view class='container' style='margin-top:{{statusBarHeight+44}}px'>
+    <!-- 搜索 -->
+    <view class="search {{isfixed? 'topsearch' : ''}}" style="top:{{statusBarHeight+44}}px">
+      <navigator class='searchcon' url='/web/search/search'>
+        <image src='../../images/web/icn-08.png'></image>请输入你要搜索的关键词</navigator>
+    </view>
+  <!-- 供应商信息 -->
+  <view class='topnav'>
+    <view class='logo'>
+      <image src='../../images/common/p6.jpg'></image>
+    </view>
+    <navigator url='/web/about/about'>
+    <view class='cen'>
+      <view class='comname'>汕头市澄海区华达玩具厂</view>
+      <view class='font2636'>
+        <text>潘洛斯积木 华达童车</text>
+        <text class='icntoysol'>玩具说第4年</text>
+      </view>
+    </view>
+    
+    </navigator>
+    <view class='btnShare' bindtap='showModal'>分享</view>
+  </view>
+
+  <!-- 轮播图 -->
+  <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="5000" duration="500" class='index-swiper' indicator-color='#fff' indicator-active-color='#ff2832'>
+    <!-- <block wx:for="{{bannerlist}}" wx:key="Name" data-data="{{item}}"> -->
+    <swiper-item>
+      <image src="../../images/common/p9.jpg" class="slide-image" />
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/common/p9.jpg" class="slide-image" />
+    </swiper-item>
+    <!-- </block> -->
+  </swiper>
+  <!-- 新品上市 -->
+  <view class='new-col'>
+    <view class='title'>新品上市
+      <view class='more'>
+        <block wx:for='{{probannerpoint}}' wx:key='Name'>
+          <i class="{{current-1==index?'active':''}}"></i>
+        </block>
+      </view>
+    </view>
+    <swiper indicator-dots="{{false}}" autoplay="{{true}}" interval="5000" duration="500" class='pro-swiper' indicator-color='#fff' indicator-active-color='#ff2832' bindchange='swiperChange'>
+      <!-- <block wx:for="{{probannerlist}}" wx:key="Name" data-data="{{item}}"> -->
+      <swiper-item class='prolist'>
+        <view class='pro'>
+        <navigator  url='/web/productdetail/productdetail'>
+          <view class='proimg'>
+            <image src='../../images/common/p2.jpg'></image>
+            <i class='play'>
+              <image src='../../images/web/icn-03.png'></image>
+            </i>
+          </view>
+          </navigator>
+          <view class='pro-con'>
+            <span class='font2835'>我的我的世界展示盒...</span>
+            <span class='font2635'>NO.832-835</span>
+          </view>
+          <i class="addicon"></i>
+        </view>
+        <view class='pro'>
+        <navigator  url='/web/productdetail/productdetail'>
+          <view class='proimg'>
+            <image src='../../images/common/p2.jpg'></image>
+            <!-- <i class='play'>
+              <image src='../../images/web/icn-03.png'></image>
+            </i> -->
+          </view>
+          </navigator>
+          <view class='pro-con'>
+            <span class='font2835'>我的我的世界展示盒...</span>
+            <span class='font2635'>NO.832-835</span>
+          </view>
+          <i class="addicon"></i>
+        </view>
+      </swiper-item>
+
+      <swiper-item class='prolist'>
+        <view class='pro'>
+        <navigator  url='/web/productdetail/productdetail'>
+          <view class='proimg'>
+            <image src='../../images/common/p2.jpg'></image>
+            <i class='play'>
+              <image src='../../images/web/icn-03.png'></image>
+            </i>
+          </view>
+          </navigator>
+          <view class='pro-con'>
+            <span class='font2835'>我的我的世界展示盒...</span>
+            <span class='font2635'>NO.832-835</span>
+          </view>
+          <i class="addicon"></i>
+        </view>
+        <view class='pro'>
+        <navigator  url='/web/productdetail/productdetail'>
+          <view class='proimg'>
+            <image src='../../images/common/p2.jpg'></image>
+            <i class='play'>
+              <image src='../../images/web/icn-03.png'></image>
+            </i>
+          </view>
+          </navigator>
+          <view class='pro-con'>
+            <span class='font2835'>我的我的世界展示盒...</span>
+            <span class='font2635'>NO.832-835</span>
+          </view>
+          <i class="addicon"></i>
+        </view>
+      </swiper-item>
+      <!-- </block> -->
+    </swiper>
+  </view>
+
+  <!-- 热销产品 -->
+  <view class='new-col'>
+    <view class='title'>热销产品
+      <navigator class='more' url='/web/productlist/productlist'>更多</navigator>
+    </view>
+    <view class='prolist'>
+      <view class='pro'>
+      <navigator url=''>
+        <view class='proimg'>
+          <image src='../../images/common/p2.jpg'></image>
+          <i class='play'>
+            <image src='../../images/web/icn-03.png'></image>
+          </i>
+        </view>
+        </navigator>
+        <view class='pro-con'>
+          <span class='font2835'>我的我的世界展示盒...</span>
+          <span class='font2635'>NO.832-835</span>
+        </view>
+        <i class="addicon"></i>
+      </view>
+      <view class='pro'>
+      <navigator url=''>
+        <view class='proimg'>
+          <image src='../../images/common/p2.jpg'></image>
+          <i class='play'>
+            <image src='../../images/web/icn-03.png'></image>
+          </i>
+        </view>
+        </navigator>
+        <view class='pro-con'>
+          <span class='font2835'>我的我的世界展示盒...</span>
+          <span class='font2635'>NO.832-835</span>
+        </view>
+        <i class="addicon"></i>
+      </view>
+      <view class='pro'>
+      <navigator url=''>
+        <view class='proimg'>
+          <image src='../../images/common/p2.jpg'></image>
+          <i class='play'>
+            <image src='../../images/web/icn-03.png'></image>
+          </i>
+        </view>
+        </navigator>
+        <view class='pro-con'>
+          <span class='font2835'>我的我的世界展示盒...</span>
+          <span class='font2635'>NO.832-835</span>
+        </view>
+        <i class="addicon"></i>
+      </view>
+      <view class='pro'>
+      <navigator url=''>
+        <view class='proimg'>
+          <image src='../../images/common/p2.jpg'></image>
+          <i class='play'>
+            <image src='../../images/web/icn-03.png'></image>
+          </i>
+        </view>
+        </navigator>
+        <view class='pro-con'>
+          <span class='font2835'>我的我的世界展示盒我的我的世界展示盒...</span>
+          <span class='font2635'>NO.832-835</span>
+        </view>
+        <i class="addicon"></i>
+      </view>
+    </view>
+  </view>
+  <template is="footer" />
+</view>
+
+<!-- commodity_screen start 分享名片弹出框 -->
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+<view class='wx '><button open-type='share' class='shareButton'><image src='../../images/web/wx.png'></image></button><view>微信好友</view></view>
+<view class='wx '><navigator url=''><image src='../../images/web/pyq.png'></image><view>名片海报</view></navigator></view>
+<view class='quxiao ' bindtap="hideModal">取消</view>
+</view>
+<!-- commodity_screen end -->

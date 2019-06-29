@@ -1,0 +1,65 @@
+<!--video/index/index.wxml-->
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<view class='container'>
+  <!-- 切换导航栏 -->
+  <view class='video-nav'>
+    <scroll-view scroll-x="true" style="width: 650rpx;white-space:nowrap;float:left;-webkit-overflow-scrolling: touch;" >
+      <!-- vtab -->
+      <view class="vtab">
+        <view class="vtab-nav">
+          <view wx:for="{{tabnav.tabitem}}" wx:key='{{index}}' bindtap="setTab" data-tabindex="{{index}}"
+            class="vtab-item {{showtab==index?'tabcurrent':''}}">{{item.text}}</view>
+          <view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+    <view class='btnsearch'>
+      <navigator url='/pages/search/search'>
+        <image src='../../images/video/icn-01.png'></image>
+      </navigator>
+    </view>
+  </view>
+  <!-- 视频列表 ------------------------------点击视频区域播放视频，点击更多进入详情页 -->
+  <view class='videolist'>
+    <view class='videoli' wx:for='{{vedio_data}}' wx:key=''>
+      <!-- 视频图片部分 -->
+      <view class='video-img' style="display: {{ _index == index ? 'none' : 'block' }};" bindtap="videoPlay"
+        id="{{index}}">
+        <image src='../../images/common/p8.jpg' class='img'></image>
+        <view class='vmask'>
+          <view class='vm1'>
+            <image src='../../images/video/video.png'></image>
+          </view>
+          <view class='vm2'>益智工具积木，能拼成各种类型，环保安全无毒，是小孩子最佳的玩具。</view>
+        </view>
+      </view>
+      <view class='video-play' wx:if="{{_index == index}}">
+        <!-- 视频 -->
+        <video src="{{item.url}}" id="{{index}}" class='video' wx:if="{{_index == index}}" autoplay="{{true}}">
+        </video>
+      </view>
+      <!-- 视频来源部分 -->
+      <view class='video-or'>
+        <navigator url='/video/detail/detail'>
+          <view class='left'>
+            <view class='vlogo'>
+              <image src='../../images/common/p7.jpg'></image>
+            </view>
+            <text class='vname'>陆之宝玩具</text>
+            <text class='vmore'>更多</text>
+          </view>
+        </navigator>
+        <view class='right'>
+          <view class='addCart'>
+            <image src='../../images/video/icn-02.png'></image>加入询单
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <template is="footer" />
+</view>

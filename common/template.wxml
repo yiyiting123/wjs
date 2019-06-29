@@ -1,0 +1,29 @@
+<!-- 底部菜单栏 -->
+<template name="tabBar">
+  <view class="tabBar">
+    <block wx:for="{{tabBar}}" wx:for-item="item" wx:key="tabBar">
+      <!-- <view class="tabBar-item" wx:if='{{item.current== 1}}'>
+        <view>
+          <view>
+            <image class="icon" src='{{item.iconPath}}'></image>
+          </view>
+          <view class="{{item.current== 1 ? 'tabBartext' :''}}">{{item.text}}</view>
+        </view>
+      </view> -->
+      <view class="tabBar-item" >
+        <navigator class='tabBar-navigator' open-type="reLaunch" url="{{item.pagePath}}">
+        <view class='icn' wx:if='{{item.number>0}}'>{{item.number}}</view>
+          <view>
+            <image class="icon" src='{{item.iconPath}}'></image>
+          </view>
+          <view class="{{item.current== 1 ? 'tabBartext' :''}}">{{item.text}}</view>
+        </navigator>
+      </view>
+    </block>
+  </view>
+</template>
+
+<template name='footer'>
+  <view class='footer'><text class="txtcon">玩具说:为了无法计算的价值</text></view>
+</template>
+

@@ -1,0 +1,88 @@
+<!--web/about/about.wxml-->
+<import src="../common/template.wxml" />
+<!-- 状态栏 -->
+<template is="statusBar" data="{{statusBarHeight,statusBarTitle}}"/>
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<view class='container' style='margin-top:{{statusBarHeight+44}}px'>
+ <!-- 切换 -->
+  <view class='search-nav'>
+    <view class="sea-li {{tabcurrent==0?'sea-current':''}}" data-idx='0' bindtap='bindChange'>基本信息</view>
+    <view class="sea-li {{tabcurrent==2?'sea-current':''}}" data-idx='2' bindtap='bindChange'>认证信息</view>
+    <view class="sea-li {{tabcurrent==1?'sea-current':''}}" data-idx='1' bindtap='bindChange'>企业简介</view>
+  </view>
+
+<!-- 基本信息 -->
+<view class='main' wx:if="{{current==0}}">
+<view class='li'><text class='li-txt'>企业名称</text><text class='li-con'>汕头市恒泰科技有限公司</text></view>
+<view class='li'><text class='li-txt'>经营模式</text><text class='li-con'>生产型</text></view>
+<view class='li'><text class='li-txt'>旗下品牌</text><text class='li-con'>童乐宝 恒泰童车 </text> </view>
+<view class='li'><text class='li-txt'>主营产品</text><text class='li-con'>电动童车 滑行车 沙滩玩具 遥控船 坐便器 轨道车 小颗粒积木</text></view>
+<view class='li'><text class='li-txt'>地    区</text><text class='li-con'>广东省 汕头市 澄海区</text></view>
+<view class='li'><text class='li-txt'>地    址</text><text class='li-con'>隆都镇店市高速路口</text></view>
+<view class='li'><text class='li-txt'>产品数量</text><text class='li-con'>251只</text></view>
+</view>
+
+<!-- 企业简介 -->
+<view class='main' wx:if='{{current==1}}'>
+<view class='abouttxt'>汕头市恒泰科技有限公司成立于1980年， 位于有“中国玩具礼品城”之称的汕头市澄海区，是集研发, 生产,销售一体的婴童用品公司，专业生产儿童电动童车系列，正版授权童车系列，婴童运动系列, 军事模型系列，儿童安全座椅系列等等. 公司拥有“恒泰”、“恒乐宝“、”安迪姆“三大国内外知名品牌. 
+公司是专利保护协会会员单位，广东玩具文化经济发展研究会会员单位，澄海玩具协会副会长单位，历年来被评为”文明诚信企业“，”广东省守合同重信用企业“。我们是全国玩具标准化技术委员会委员，参与起草及审定行业标准：GB6675-2003，GB19865-2005，电动童车通用技术条件QB/T2232-2008；模型产品系列标准GB/T26701-2011.<label class='viewmore'>[展开更多]</label></view>
+
+ <!-- 企业环境  -->
+  <view class='new-col pinpai-col'>
+    <view class='title'>企业环境
+      <view class='more'>
+        <span class="font28">{{current}} </span>
+        <span class="font22"> / {{swipercount}}</span>
+      </view>
+    </view>
+    <view class='pinpai-slider'>
+      <!-- 轮播图 -->
+      <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="5000" duration="500" class='pinpai-swiper' bindchange='swiperChange'>
+        <!-- <block wx:for="{{bannerlist}}" wx:key="Name" data-data="{{item}}"> -->
+        <swiper-item>
+          <view class='pinpai-item'>
+            <image src="../../images/common/p1.jpg" class="v-img" />
+            <image class='vicn' src='../../images/common/icn-02.png'></image>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class='pinpai-item'>
+            <image src="../../images/common/p1.jpg" class="v-img" />
+            <image class='vicn' src='../../images/common/icn-02.png'></image>
+          </view>
+        </swiper-item>
+        <!-- </block> -->
+      </swiper>
+    </view>
+  </view>
+</view>
+
+<!-- 认证信息 -->
+<view class='main' wx:if='{{current==2}}'>
+<view class='li'><text class='icntoysol'>玩具说VIP第4年</text></view>
+<view class='li'><view><text class='icnfix'>企业身份认证</text><text class='icnfield'>实地认证</text></view></view>
+<view class='li li-title'>工商注册信息</view>
+<view class='li'><text class='li-txt'>企业名称</text><text class='li-con'>汕头市恒泰科技有限公司</text></view>
+<view class='li'><text class='li-txt'>注册号</text><text class='li-con'>91440515324955401B</text></view>
+<view class='li'><text class='li-txt'>注册地址</text><text class='li-con'>汕头市澄海区前埔村道与高速公路入口交           界处</text></view>
+<view class='li'><text class='li-txt'>成立日期</text><text class='li-con'>2015-01-20</text></view>
+<view class='li'><text class='li-txt'>经营范围</text><text class='li-con'>电子设备及电子科技技术的研发及推广；
+               生产、销售：玩具，塑料制品，童车、婴
+               童用品、工艺品，文具用品，电子产品，
+               服装；销售：五金制品、电子元配件，塑
+               料原料；货物进出口、技术进出口。(依法
+               须经批准的项目，经相关部门批准后方可
+               开展经营活动)〓</text></view>
+<view class='li'><text class='li-txt'>法人代表</text><text class='li-con'>陈维坤</text></view>
+<view class='li'><text class='li-txt'>企业类型</text><text class='li-con'>有限责任公司(自然人投资或控股)</text></view>
+<view class='li'><text class='li-txt'>登记机关</text><text class='li-con'>汕头市澄海区工商行政管理局</text></view>
+</view>
+  <template is="footer" />
+</view>
+
+<!-- 导航 -->
+<view class='vtab-nav'>
+<view class='vline'><view class='top'>在线咨询供应商</view><view class='butt'>（时间:9:00-22:00）</view></view>
+<view class='vaddcart'><view class='top'>拨打电话</view><view class='butt'>（时间:9:00-22:00）</view></view>
+</view>

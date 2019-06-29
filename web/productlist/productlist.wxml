@@ -1,0 +1,74 @@
+<!--web/productlist/productlist.wxml-->
+<import src="../common/template.wxml" />
+<!-- 状态栏 -->
+<template is="statusBarreturn" data="{{statusBarHeight,statusBarTitle}}"/>
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<!-- 进货单 -->
+<template is="btnCart" data="{{cartNum}}"/>
+<view class='container' style='margin-top:{{statusBarHeight+44}}px'>
+ <view class='vnav'><view class='font34'>{{txtlable}}</view> <text class="btn {{current==0?'btnselect':''}} ">按热度</text><text class="btn {{current==1?'btnselect':''}} ">按时间</text></view>
+<view class='prolist'>
+<view class='pro'>
+<navigator url='/web/productdetail/productdetail'>
+  <view class='proimg'>
+    <image src='../../images/common/p2.jpg'></image>
+    <i class='play'>
+      <image src='../../images/web/icn-03.png'></image>
+    </i>
+  </view>
+  </navigator>
+  <view class='pro-con'>
+    <span class='font2835'>我的我的世界展示盒...</span>
+    <span class='font2635'>NO.832-835</span>
+  </view>
+  <i class="addicon"></i>
+</view>
+<view class='pro'>
+<navigator  url='/web/productdetail/productdetail'>
+  <view class='proimg'>
+    <image src='../../images/common/p2.jpg'></image>
+    <i class='play'>
+      <image src='../../images/web/icn-03.png'></image>
+    </i>
+  </view>
+  </navigator>
+  <view class='pro-con'>
+    <span class='font2835'>我的我的世界展示盒...</span>
+    <span class='font2635'>NO.832-835</span>
+  </view>
+  <i class="addicon"></i>
+</view>
+<view class='pro'>
+<navigator  url='/web/productdetail/productdetail'>
+  <view class='proimg'>
+    <image src='../../images/common/p2.jpg'></image>
+    <i class='play'>
+      <image src='../../images/web/icn-03.png'></image>
+    </i>
+  </view>
+  </navigator>
+  <view class='pro-con'>
+    <span class='font2835'>我的我的世界展示盒...</span>
+    <span class='font2635'>NO.832-835</span>
+  </view>
+  <i class="addicon"></i>
+</view>
+<view class='pro'>
+<navigator  url='/web/productdetail/productdetail'>
+  <view class='proimg'>
+    <image src='../../images/common/p2.jpg'></image>
+    <i class='play'>
+      <image src='../../images/web/icn-03.png'></image>
+    </i>
+  </view>
+  </navigator>
+  <view class='pro-con'>
+    <span class='font2835'>我的我的世界展示盒...</span>
+    <span class='font2635'>NO.832-835</span>
+  </view>
+  <i class="addicon"></i>
+</view>
+</view>
+  <template is="footer" />
+</view>

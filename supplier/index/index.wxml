@@ -1,0 +1,138 @@
+<!--supplier/index/index.wxml-->
+<import src="../../common/template.wxml" />
+<!-- 底部导航条 -->
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<view class='container'>
+  <!-- 玩具品牌推荐  显示4个-->
+  <view class='new-col pinpai-col'>
+    <view class='title'>玩具品牌推荐
+      <view class='more'>
+        <span class="font28">{{current}} </span>
+        <span class="font22"> / {{swipercount}}</span>
+      </view>
+    </view>
+    <view class='pinpai-slider'>
+      <!-- 轮播图 -->
+      <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="5000" duration="500" class='pinpai-swiper' bindchange='swiperChange'>
+        <!-- <block wx:for="{{bannerlist}}" wx:key="Name" data-data="{{item}}"> -->
+        <swiper-item>
+          <view class='pinpai-item'>
+            <image src="../../images/common/p1.jpg" class="v-img" />
+            <image class='vicn' src='../../images/common/icn-02.png'></image>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class='pinpai-item'>
+            <image src="../../images/common/p1.jpg" class="v-img" />
+            <image class='vicn' src='../../images/common/icn-02.png'></image>
+          </view>
+        </swiper-item>
+        <!-- </block> -->
+      </swiper>
+    </view>
+  </view>
+  <!-- 品牌荟萃 -->
+  <view class='new-col'>
+    <view class='title'>品牌荟萃
+      <navigator class='more' url='/supplier/brandlist/brandlist'>更多</navigator>
+    </view>
+    <view class='col-con'>
+      <navigator class='pp-item' url='/web/index/index'>
+        <view class='pimg'>
+          <image src='../../images/common/p5.jpg'></image>
+        </view>
+        <view class='pname'>华达玩具</view>
+      </navigator>
+      <navigator class='pp-item' url='/web/index/index'>
+        <view class='pimg'>
+          <image src='../../images/common/p5.jpg'></image>
+        </view>
+        <view class='pname'>华达玩具</view>
+      </navigator>
+      <navigator class='pp-item nomar'  url='/web/index/index'>
+        <view class='pimg'>
+          <image src='../../images/common/p5.jpg'></image>
+        </view>
+        <view class='pname'>华达玩具</view>
+      </navigator>
+      <navigator class='pp-item'  url='/web/index/index'>
+        <view class='pimg'>
+          <image src='../../images/common/p5.jpg'></image>
+        </view>
+        <view class='pname'>华达玩具</view>
+      </navigator>
+      <navigator class='pp-item'  url='/web/index/index'>
+        <view class='pimg'>
+          <image src='../../images/common/p5.jpg'></image>
+        </view>
+        <view class='pname'>华达玩具</view>
+      </navigator>
+    </view>
+  </view>
+
+  <!-- 最新进驻供应商 显示5个-->
+  <view class='new-col'>
+    <view class='title'>最新进驻供应商
+      <view class='more'>共
+        <span class='fontred'>2578</span> 家供应商</view>
+    </view>
+    <view class='col-con'>
+      <navigator class='n-item'  url='/web/index/index'>
+        <view class='nimg'>
+          <image src='../../images/common/p6.jpg'></image>
+        </view>
+        <view class='nright'>
+          <view class='font30'>广东澄海十六笔玩具有限公司</view>
+          <view class='font26'>迷你小风扇,熊出没系列,3d益智玩具,益智DIY串珠,熊出没系列,3d益智玩具...</view>
+        </view>
+      </navigator>
+      <navigator class='n-item'  url='/web/index/index'>
+        <view class='nimg'>
+          <image src='../../images/common/p6.jpg'></image>
+        </view>
+        <view class='nright'>
+          <view class='font30'>广东澄海十六笔玩具有限公司</view>
+          <view class='font26'>迷你小风扇,熊出没系列,3d益智玩具,益智DIY串珠,熊出没系列,3d益智玩具...</view>
+        </view>
+      </navigator>
+      <navigator class='n-item'  url='/web/index/index'>
+        <view class='nimg'>
+          <image src='../../images/common/p6.jpg'></image>
+        </view>
+        <view class='nright'>
+          <view class='font30'>广东澄海十六笔玩具有限公司</view>
+          <view class='font26'>迷你小风扇,熊出没系列,3d益智玩具,益智DIY串珠,熊出没系列,3d益智玩具...</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  
+  <!-- 按类别找供应商 -->
+  <view class='new-col areacol'>
+    <view class='title'>按类别找供应商
+      <navigator class='more' url='/supplier/category/category'>更多</navigator>
+    </view>
+    <view class='col-con'>
+      <navigator class='s-item'  url='/supplier/supplierlist/supplierlist'>遥控玩具(208)</navigator>
+      <navigator class='s-item'  url='/supplier/supplierlist/supplierlist'>电动玩具(350)</navigator>
+      <navigator class='s-item nomar'  url='/supplier/supplierlist/supplierlist'>电动玩具(350)</navigator>
+      <navigator class='s-item'  url='/supplier/supplierlist/supplierlist'>电动玩具(350)</navigator>
+      <navigator class='s-item'  url='/supplier/supplierlist/supplierlist'>电动玩具(350)</navigator>
+    </view>
+  </view>
+  
+  <!-- 按地区找供应商 -->
+  <view class='new-col areacol'>
+    <view class='title'>按地区找供应商
+      <navigator class='more' url='/supplier/category/category'>更多</navigator>
+    </view>
+    <view class='col-con'>
+      <navigator class='s-item'  url='/supplier/supplierlist/supplierlist'>汕头市(1568)</navigator>
+      <navigator class='s-item'  url='/supplier/supplierlist/supplierlist'>揭阳市(45)</navigator>
+      <navigator class='s-item nomar'  url='/supplier/supplierlist/supplierlist'>揭阳市(45)</navigator>
+      <navigator class='s-item'  url='/supplier/supplierlist/supplierlist'>揭阳市(45)</navigator>
+      <navigator class='s-item'  url='/supplier/supplierlist/supplierlist'>揭阳市(45)</navigator>
+    </view>
+  </view>
+    <template is="footer" />
+</view>
